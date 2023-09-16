@@ -1,0 +1,154 @@
+.main{
+    background-color: black;
+    margin-bottom: 5rem;
+}
+.heading{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    flex-shrink: 0;
+    color: white;
+    font-family: Nidus 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.4rem;
+    font-weight: 400;
+    letter-spacing: 0.44rem;
+    text-decoration-line:underline ;
+    margin-bottom: 4rem;
+}
+.submain{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: center;
+   margin: 3rem;
+}
+.section{
+    text-align: center;
+}
+.line1{
+    margin-top: 3rem;
+}
+.line2{
+    margin-top: 9rem;
+}
+.line3{
+    margin-top: 12rem;
+}
+.line4{
+    margin-top: 10rem;
+}
+.sportname{
+    color: #FFF;
+    text-align: center;
+    font-family: Nidus 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+.card{
+    width: 15rem;
+    border-radius: 0.5055rem;
+    border: 0.505px solid #FFF;
+    background: linear-gradient(153deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: -2.52744px 1.51646px 2.02195px 0px rgba(92, 92, 92, 0.25);
+    backdrop-filter: blur(10.615254402160645px);
+    text-align: center;
+    padding-left: 15%;
+}
+.card:hover{
+    scale: 1.04;
+    transition-duration: 300ms;
+}
+
+.card image{
+    text-align: center;
+    margin: auto;
+}
+.center{
+    padding: 2rem;
+    display: inline;
+}
+
+@media screen and (max-width: 1380px) {
+     .heading{
+        font-size: 3.4rem;
+     }
+     .card{
+        width: 10rem;
+     }
+     .center img{
+        height: 70rem;
+     }
+     .sportname{
+        font-size: 1.3rem;
+     }
+     .line1{
+        margin-top: 3rem;
+     }
+     .line2{
+        margin-top: 9rem;
+     }
+     .line3{
+        margin-top: 10rem;
+     }
+     .line4{
+        margin-top: 9rem;
+     }
+     .card{
+        padding:20px 20px 20px 20px;
+    }
+  }
+  @media screen and (max-width: 850px){
+    .heading{
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+    }
+    .line1{
+        margin-top: 1rem;
+    }
+    .line2{
+        margin-top: 1rem;
+    }
+    .line3{
+        margin-top: 3rem;
+    }
+    .line4{
+        margin-top: 2rem;
+    }
+    .center img{
+        height: 45rem;
+    }
+    
+  } 
+  @media screen and (max-width: 720px){
+    .center{
+        display: none;
+    }
+    .submain{
+        justify-content: space-around;
+        padding-left: 3rem;
+    }
+    
+  }
+  @media screen and (max-width: 500px){
+    .left{
+        margin-right: 3rem;
+    }
+    .right{
+        margin-right: 2rem;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 410px){
+    .submain{
+        grid-template-columns: auto;
+    }
+    .heading{
+        font-size: 1.2rem;
+        margin-bottom: -1rem;
+        letter-spacing: 0.3rem;
+    }
+  }
