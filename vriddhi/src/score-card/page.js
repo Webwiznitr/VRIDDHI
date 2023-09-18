@@ -68,23 +68,23 @@ const Score = () =>{
 
                         <div className="w-full flex justify-evenly col-span-2 items-center text-black mt-2">
 
-                            <button id="cricket-btn-mob" onClick={() => {sport_selector_mob(`cricket-btn-mob`,`cricket-score-upcoming-mob`,`cricket-score-completed-mob`);}} type="button" className="mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[7px] my-2 scale-125">
+                            <button id="cricket-btn-mob" onClick={() => {sport_selector_mob(`cricket-btn-mob`,`cricket-score-upcoming-mob`,`cricket-score-completed-mob`);}} type="button" className="mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 scale-125">
                                 CRICKET
                             </button>
                             
-                            <button id="football-btn-mob" onClick={() => {sport_selector_mob(`football-btn-mob`,`football-score-upcoming-mob`,`football-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[7px] my-2">
+                            <button id="football-btn-mob" onClick={() => {sport_selector_mob(`football-btn-mob`,`football-score-upcoming-mob`,`football-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2">
                                 FOOTBALL
                             </button>
 
-                            <button id="basketball-btn-mob" onClick={() => {sport_selector_mob(`basketball-btn-mob`,`basketball-score-upcoming-mob`,`basketball-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[7px] my-2">
+                            <button id="basketball-btn-mob" onClick={() => {sport_selector_mob(`basketball-btn-mob`,`basketball-score-upcoming-mob`,`basketball-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2">
                                 BASKET BALL
                             </button>
 
-                            <button id="khokho-btn-mob" onClick={() => {sport_selector_mob(`khokho-btn-mob`,`khokho-score-upcoming-mob`,`khokho-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[7px] my-2">
+                            <button id="khokho-btn-mob" onClick={() => {sport_selector_mob(`khokho-btn-mob`,`khokho-score-upcoming-mob`,`khokho-score-completed-mob`);}} type="button" className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2">
                                 KHOKHO
                             </button>
 
-                            <button id="kabbadi-btn-mob" onClick={() => {sport_selector_mob(`kabbadi-btn-mob`,`kabbadi-score-upcoming-mob`,`kabbadi-score-completed-mob`);}} type="button" className="w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[7px] my-2">
+                            <button id="kabbadi-btn-mob" onClick={() => {sport_selector_mob(`kabbadi-btn-mob`,`kabbadi-score-upcoming-mob`,`kabbadi-score-completed-mob`);}} type="button" className="w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2">
                                 KABBADI
                             </button>
                         </div>
