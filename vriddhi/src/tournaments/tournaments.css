@@ -13,13 +13,23 @@
     font-weight: 400;
     letter-spacing: 0.44rem;
     text-decoration-line:underline ;
+    text-underline-offset: 15px;
     margin-bottom: 4rem;
+}
+.trophymobile{
+    display: none;
 }
 .submain{
    display: grid;
    grid-template-columns: auto auto auto;
    justify-content: center;
    margin: 3rem;
+}
+.leftlines{
+    display: none;
+}
+.rightlines{
+    display: none;
 }
 .section{
     text-align: center;
@@ -75,7 +85,8 @@
         font-size: 3.4rem;
      }
      .card{
-        width: 10rem;
+        width: 12rem;
+        padding-right: 20px;
      }
      .center img{
         height: 70rem;
@@ -87,17 +98,14 @@
         margin-top: 3rem;
      }
      .line2{
-        margin-top: 9rem;
-     }
-     .line3{
         margin-top: 10rem;
      }
-     .line4{
-        margin-top: 9rem;
+     .line3{
+        margin-top: 12rem;
      }
-     .card{
-        padding:20px 20px 20px 20px;
-    }
+     .line4{
+        margin-top: 10rem;
+     }
   }
   @media screen and (max-width: 850px){
     .heading{
@@ -108,13 +116,13 @@
         margin-top: 1rem;
     }
     .line2{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .line3{
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
     .line4{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .center img{
         height: 45rem;
@@ -122,16 +130,95 @@
     
   } 
   @media screen and (max-width: 720px){
+    .submain{
+        grid-template-columns: auto;
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        top:11rem;
+        text-align: center;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
     .center{
         display: none;
     }
     .submain{
         justify-content: space-around;
-        padding-left: 3rem;
     }
-    
+    .trophymobile{
+        display: block;
+        width: 7rem;
+        margin: auto;
+        padding-top:20px ;
+    }
+    .right{
+        margin-top: 1.5rem;
+    }
+    .card{
+        width: 11.68475rem;
+        height: 6.92631rem;
+        padding-left: 35px;
+        margin-top: 1rem;
+    }
+    .card img{
+        width: 7.14381rem;
+        height: 6.48169rem;
+    }
+    .leftlines,.rightlines{
+        display: inline-block;
+        position: absolute;
+        top:11rem;
+    }
+    .leftlines{
+        left: 10rem;
+        
+    }
+    .rightlines{
+        right: 10rem;
+        
+    }
+    .leftline1{
+        margin-top: 9.25rem;
+    }
+    .leftline2{
+        margin-top: 11.75rem;
+    }
+    .leftline3{
+        margin-top: 11.75rem;
+    }
+    .leftline4{
+        margin-top: 12.25rem;
+    }
+    .rightline1{
+        margin-top: 21.25rem;
+    }
+    .rightline2{
+        margin-top: 12rem;
+    }
+    .rightline3{
+        margin-top: 11.75rem;
+    }
+ 
+
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 660px){
+    .leftlines{
+        left: 6.5rem;
+        
+    }
+    .rightlines{
+        right: 6.5rem;
+    
+    }
+    .heading{
+        text-underline-offset: 7px;
+    }
+  }
+  @media screen and (max-width: 510px){
     .left{
         margin-right: 3rem;
     }
@@ -141,6 +228,17 @@
     .heading{
         font-size: 1.5rem;
     }
+    .submain{
+        padding-left: 3.5rem;
+    }
+    .leftlines{
+        left: 2.5rem;
+        
+    }
+    .rightlines{
+        right: 2.5rem;
+    
+    }
   }
   @media screen and (max-width: 410px){
     .submain{
@@ -148,7 +246,35 @@
     }
     .heading{
         font-size: 1.2rem;
-        margin-bottom: -1rem;
         letter-spacing: 0.3rem;
+    }
+    .card{
+        margin-top: 1rem;
+    }
+    .leftlines{
+        left: 0.5rem;
+        
+    }
+    .rightlines{
+        right: 0.5rem;
+    
+    }
+    .leftline1{
+        margin-top: 9.5rem;
+    }
+    .leftline2{
+       margin-top: 12.5rem;
+    }
+    .leftline3{
+        margin-top: 11.5rem;
+    }
+    .rightline1{
+        margin-top: 22rem;
+    }
+    .rightline2{
+        margin-top: 12.5rem;
+    }
+    .rightline3{
+        margin-top: 11.5rem;
     }
   }
