@@ -9,12 +9,24 @@ import tabletennis from'./assets/tabletennis.png'
 import volleyball from'./assets/volleyball.png'
 import badminton from'./assets/badminton.png'
 import centerimg from './assets/centerimg.png'
+import trophy from './assets/trophymobile.png'
+import leftmobile from './assets/leftmobile.png'
+import rightmobile from './assets/rightmobile.png'
 
 export default function Footer() {
   return (
    <div className="main">
     <h1 className="heading">TOURNAMENT</h1>
+    <Image src={trophy} className="trophymobile"></Image>
+    <div className='leftlines'>
+        <Image src={leftmobile} className='leftline1'></Image>
+        <Image src={leftmobile} className='leftline2'></Image>
+        <Image src={leftmobile} className='leftline3'></Image>
+        <Image src={leftmobile} className='leftline4'></Image>
+      </div>
+      
     <div className="submain">
+      
     <div className="left">
       <div className="section line1">
         <h3 className="sportname">BASKETBALL</h3>
@@ -71,7 +83,13 @@ export default function Footer() {
       </div>
      </div>
     </div>
+   
     </div>
+    <div className="rightlines">
+        <Image src={rightmobile} className='rightline1'></Image>
+        <Image src={rightmobile} className='rightline2'></Image>
+        <Image src={rightmobile} className='rightline3'></Image>
+      </div>
     </div>
   );
 }
