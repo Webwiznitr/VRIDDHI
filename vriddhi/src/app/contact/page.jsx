@@ -23,7 +23,7 @@ const page = () => {
         <div className="flex flex-col gap-9 md:w-1/4 w-[15rem] ">
           {CotactData.map((item) => {
             return (
-              <div className="flex md:justify-start justify-start items-center gap-6 md:items-center">
+              <div className="flex md:justify-start flex-col md:flex-row md:text-start justify-center text-center items-center gap-6 md:items-center">
                 <Image
                   src={item.logo}
                   alt="logo"
@@ -37,7 +37,7 @@ const page = () => {
           })}
         </div>
       </div>
-      <div className="p-5 mt-10">
+      <div className="mt-10">
         <Footer />
       </div>
     </section>
