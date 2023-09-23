@@ -62,7 +62,7 @@ const About = () => {
               alt='basket'
             />
 
-            <h1 className='md:mt-7 text-2xl md:w-[53vw] md:text-end md:text-[3.5vw] mt-[-35vh]' style={{fontFamily:'Nidus sans, sans-serif'}}>VRIDDHI IS EAST INDIA&apos;S BIGGEST SPORTS FESTIVAL. A SPORTS GALA OF SORTS, SEVERAL SPORTS ENTHUSIASTS GRACE THE PLATFORM TO PROVE THEIR METTLE WITH THE MOTTO TO IGNITE THE SPORTSMAN IN YOU AND EDUCATE YOU ABOUT THE SPIRIT OF THE GAME.</h1>
+            <h1 className='md:mt-7 text-2xl md:w-[53vw] md:text-end md:text-[3.5vw] mdx:mt-[-11.5vw] mdt:mt-[-15vw]' style={{fontFamily:'Nidus sans, sans-serif'}}>VRIDDHI IS EAST INDIA&apos;S BIGGEST SPORTS FESTIVAL. A SPORTS GALA OF SORTS, SEVERAL SPORTS ENTHUSIASTS GRACE THE PLATFORM TO PROVE THEIR METTLE WITH THE MOTTO TO IGNITE THE SPORTSMAN IN YOU AND EDUCATE YOU ABOUT THE SPIRIT OF THE GAME.</h1>
 
           </div>
           

@@ -15,7 +15,8 @@ module.exports = {
 
       screens: {
         'md' : {'max': '1023px'},
-        'mdx' : '1024px'
+        'mdx' : '1024px',
+        'mdt': { 'raw': '(max-height: 760px)' }
       }
     },
   },
