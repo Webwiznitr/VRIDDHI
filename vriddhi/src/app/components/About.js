@@ -43,7 +43,7 @@ const About = () => {
 
             
 
-              <Image className='z-30  mdx:scale-x-[-1] md:w-[30vw] md:mt-[-2vh] md:mr-[-5vw] mdx:ml-[61vw] mt-[-30vh] '
+              <Image className='z-30  mdx:scale-x-[-1] md:w-[30vw] md:mt-[-2vh] md:mr-[-5vw] mdx:ml-[61vw] mt-[-30vh] mdxx:absolute mdxx:mt-[-21vh]'
               src='/images/About/flip.svg'
               width={230}
               height={170}
@@ -62,7 +62,7 @@ const About = () => {
               alt='basket'
             />
 
-            <h1 className='md:mt-7 text-2xl md:w-[53vw] md:text-end md:text-[3.5vw] mdx:mt-[-11.5vw] mdt:mt-[-15vw]' style={{fontFamily:'Nidus sans, sans-serif'}}>VRIDDHI IS EAST INDIA&apos;S BIGGEST SPORTS FESTIVAL. A SPORTS GALA OF SORTS, SEVERAL SPORTS ENTHUSIASTS GRACE THE PLATFORM TO PROVE THEIR METTLE WITH THE MOTTO TO IGNITE THE SPORTSMAN IN YOU AND EDUCATE YOU ABOUT THE SPIRIT OF THE GAME.</h1>
+            <h1 className='md:mt-7 text-2xl md:w-[53vw] md:text-end md:text-[3.5vw] mdx:mt-[-11.5vw] mdt:mt-[-15vw] mdxx:mt-[-2vw]' style={{fontFamily:'Nidus sans, sans-serif'}}>VRIDDHI IS EAST INDIA&apos;S BIGGEST SPORTS FESTIVAL. A SPORTS GALA OF SORTS, SEVERAL SPORTS ENTHUSIASTS GRACE THE PLATFORM TO PROVE THEIR METTLE WITH THE MOTTO TO IGNITE THE SPORTSMAN IN YOU AND EDUCATE YOU ABOUT THE SPIRIT OF THE GAME.</h1>
 
           </div>
           
