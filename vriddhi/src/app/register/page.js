@@ -37,7 +37,7 @@ export default function Home() {
         name:form.name,
         contact:form.contact,
         events:form.events,
-        //elist:xcel,
+        elist:form.elist,
         Wnumber:form.Wnumber,
         participants:form.participants,
         coaches:form.coaches
