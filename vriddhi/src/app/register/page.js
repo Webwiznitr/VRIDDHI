@@ -37,7 +37,7 @@ export default function Home() {
         name:form.name,
         contact:form.contact,
         events:form.events,
-        //elist:xcel,
+        elist:form.elist,
         Wnumber:form.Wnumber,
         participants:form.participants,
         coaches:form.coaches
@@ -91,65 +91,111 @@ export default function Home() {
             <div className='grid grid-cols-2 mb-4'>
             <div>
             <input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Cricket(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Cricket(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Cricket(Men)" />
             <label className='p-2' htmlFor="Cricket(Men)">Cricket(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Football(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Football(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Football(Men)"  />
             <label className='p-2' htmlFor="Football(Men)">Football(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Basketball(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Basketball(Men)"]}
                 ));
+                }
+                
                 
             }} type="checkbox" id="Basketball(Men)"  />
             <label className='p-2' htmlFor="Basketball(Men)">Basketball(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Volleyball(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Volleyball(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Volleyball(Men)" />
             <label className='p-2' htmlFor="Volleyball(Men)">Volleyball(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Badminton(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Badminton(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Badminton(Men)"  />
             <label className='p-2' htmlFor="Badminton(Men)">Badminton(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Table-Tennis(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Table-Tennis(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Table-Tennis(Men)" />
             <label className='p-2' htmlFor="Table-Tennis(Men)">Table-Tennis(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Kabbadi(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Kabbadi(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Kabbadi(Men)" />
             <label className='p-2' htmlFor="Kabbadi(Men)">Kabbadi(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Chess");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Chess"]}
                 ));
+                }
                 
             }} type="checkbox" id="Chess" />
             <label className='p-2' htmlFor="Chess">Chess</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Badminton(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Badminton(Women)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Badminton(Women)"  />
             <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
@@ -262,66 +308,105 @@ An Excel sheet containing all the details of the students to their corresponding
             <div className='grid grid-cols-2 text-sm'>
             <div>
             <input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Cricket(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Cricket(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Cricket(Men)" />
             <label className='p-2' htmlFor="Cricket(Men)">Cricket(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Football(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Football(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Football(Men)"  />
             <label className='p-2' htmlFor="Football(Men)">Football(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Basketball(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Basketball(Men)"]}
                 ));
-                
+                }
             }} type="checkbox" id="Basketball(Men)"  />
             <label className='p-2' htmlFor="Basketball(Men)">Basketball(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Volleyball(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Volleyball(Men)"]}
                 ));
+                }
                 
             }} type="checkbox" id="Volleyball(Men)" />
             <label className='p-2' htmlFor="Volleyball(Men)">Volleyball(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Badminton(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Badminton(Men)"]}
                 ));
-                
+                }
             }} type="checkbox" id="Badminton(Men)"  />
             <label className='p-2' htmlFor="Badminton(Men)">Badminton(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Table-Tennis(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Table-Tennis(Men)"]}
                 ));
-                
+                }
             }} type="checkbox" id="Table-Tennis(Men)" />
             <label className='p-2' htmlFor="Table-Tennis(Men)">Table-Tennis(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Kabbadi(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Kabbadi(Men)"]}
                 ));
-                
+                }
             }} type="checkbox" id="Kabbadi(Men)" />
             <label className='p-2' htmlFor="Kabbadi(Men)">Kabbadi(Men)</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Chess");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Chess"]}
                 ));
-                
+                }
             }} type="checkbox" id="Chess" />
             <label className='p-2' htmlFor="Chess">Chess</label></div>
             <div><input onChange={()=>{
-                setForm((prev)=>(
+                const index=form.events.indexOf("Badminton(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
                     {...prev,events:[...form.events,"Badminton(Women)"]}
                 ));
-                
+                }
             }} type="checkbox" id="Badminton(Women)"  />
             <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
 
