@@ -21,4 +21,172 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.servicecard {
+  background-color: #2A615E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5%; */
+  /* margin-bottom: 25%; */
+  /* width: 60%; */
+  height: 100%;
+}
+
+/* #serimg1{
+  transform: translateY(-50px);
+}
+#serimg3{
+  transform: translateY(50px);
+} */
+.tourcard img {
+  width: 65%;
+  height: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+.tourcard:hover img {
+  transform: scale3d(1.1);
+  opacity: 0.2;
+}
+
+.tourcard span {
+  transition: all 0.3s ease-in-out;
+}
+
+.tourname {
+  margin: 0px 0px;
+  font-size: 0rem;
+  color: #000;
+  border-bottom: 2px solid #D77512;
+  letter-spacing: 5px;
+  position: relative;
+  top: -10px;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.tourcard:hover span {
+  font-size: 2rem;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .tourcard:hover span {
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 724px) {
+  .tourcard:hover span {
+    font-size: 1rem;
+    opacity: 1;
+  }
+}
+
+.tourcard:hover span {
+  opacity: 1;
+  top: -50px;
+}
+
+.gradient {
+  background-image: radial-gradient(grey, transparent)
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sports {
+    text-align: center;
+    width: 100%
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: rgb(85, 85, 85);
 }

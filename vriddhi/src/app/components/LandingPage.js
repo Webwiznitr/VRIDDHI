@@ -1,9 +1,10 @@
 "use client"
 import { useState, useEffect } from "react";
 import Image from 'next/image'; // Import Image component from Next.js
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Gallery from "./components/Gallery";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Gallery from "./Gallery";
+
 
 
 // Assume Navbar and Footer components are imported here
@@ -38,7 +39,7 @@ const LandingPage = () => {
                             <div className="w-1/2 text flex flex-col p-1 lg:pl-2 lg:w-3/5 mt-20 mb-40 md:ml-3">
                                 <div className="text-2xl lg:text-4x sports">Sports Fest</div>
                                 <div className="text-4xl lg:text-6xl sports lg:mt-2">
-                                    VRIDDHI'2023
+                                    VRIDDHI &apos;2023
                                 </div>
                                 <div className="text-md lg:text-xl sports lg:mt-4">
                                     Vriddhi is East India's biggest sports festival. A sports gala of
