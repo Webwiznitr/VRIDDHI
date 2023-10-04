@@ -36,10 +36,10 @@ const LandingPage = () => {
                             <div className="w-1/2 text flex flex-col p-1 lg:pl-2 lg:w-3/5 mt-20 mb-40 md:ml-3">
                                 <div className="text-2xl lg:text-4xl sports">Sports Fest</div>
                                 <div className="text-4xl lg:text-6xl sports lg:mt-2">
-                                    VRIDDHI'2023
+                                    VRIDDHI&apos;2023
                                 </div>
                                 <div className="text-md lg:text-xl sports lg:mt-4">
-                                    Vriddhi is East India's biggest sports festival. A sports gala of
+                                    Vriddhi is East India&apos;s biggest sports festival. A sports gala of
                                     sorts, several sports enthusiasts grace the platform to prove
                                     their mettle with the motto to ignite the sportsman in you and
                                     educate you about the spirit of the game.
