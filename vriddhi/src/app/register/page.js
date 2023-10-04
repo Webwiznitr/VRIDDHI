@@ -1,6 +1,6 @@
 "use client";
 import  React from 'react';
-import Image from 'next/image';
+import Navbar from "../components/navbar";
 import { useState} from 'react';
 import * as XLSX from 'xlsx';
 
@@ -55,20 +55,16 @@ export default function Home() {
       }
     }
       
-  return (<div className=' w-[100%] mdz:h-[100vh] h-[100%] bg-[#111A21]'>
-       <div className='mdz:flex grid-flow-col gap-10 text-white hidden'>
+  return (<div className=' w-[100%] mdz:h-[100%] h-[100%] bg-[#111A21]'>
+  <Navbar />
+       <div className='mdz:flex grid-flow-col pt-10 gap-10 text-white hidden'>
         <div className='h-[100vh] w-4/12'>
-        <Image className='block m-auto pt-[45vh]'
-        src='/images/VRIDDHI.png'
-        alt='logo'
-        height={300}
-        width={300}
-         />
-        </div>
-        {success ? <div className='h-[100vh] block text-white ' style={{fontFamily:'Roboto, sans-serif'}}  >
-            <div className='h-fit pt-[55px] flex font-[600] text-[48px]'>
+        <div className='h-fit justify-center pt-[55px] flex font-[600] text-[48px]'>
                 Registrations
             </div>
+        </div>
+        {success ? <div className='h-[100vh] block text-white ' style={{fontFamily:'Roboto, sans-serif'}}  >
+            
             <div className='grid grid-cols-2 font-medium'>
             <div className='p-2'>
             <div className='text-md'>
@@ -269,12 +265,6 @@ An Excel sheet containing all the details of the students to their corresponding
 
        <div className='mdz:hidden text-white font-medium' style={{fontFamily:'Roboto, sans-serif'}}>
        <div className='pt-[8vh]'>
-        <Image className='block m-auto'
-        src='/images/VRIDDHI.png'
-        alt='logo'
-        height={300}
-        width={300}
-         />
          </div>
          {success ? <div><div className=' text-[35px] m-2 font-[600] text-center'>Registrations</div>
         <div className=' block h-fit mt-4  w-11/12 m-auto bg-[#252b36] rounded p-10'>

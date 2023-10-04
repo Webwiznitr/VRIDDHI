@@ -1,8 +1,8 @@
 import React from 'react';
-import Register from './register/page';
+import LandingPage from './landing/page';
 export default function Home() {
   return (<div >
-    <Register/>
+    <LandingPage/>
   </div>
   )
 }
