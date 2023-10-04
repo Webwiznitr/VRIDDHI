@@ -1,8 +1,9 @@
 // import Image from 'next/image'
-import Gallery from "./Gallery"
+
+import LandingPage from "./LandingPage"
 
 export default function Home() {
   return (
-    <Gallery />
+    <LandingPage />
   )
 }

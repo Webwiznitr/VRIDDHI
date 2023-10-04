@@ -1,4 +1,4 @@
-import "./globals.css"
+
 import "./gallery.css"
 
 
