@@ -1,6 +1,6 @@
 "use client";
 import  React from 'react';
-import Navbar from "../components/navbar";
+
 import { useState} from 'react';
 import * as XLSX from 'xlsx';
 
@@ -56,7 +56,6 @@ export default function Home() {
     }
       
   return (<div className=' w-[100%] mdz:h-[100%] h-[100%] bg-[#111A21]'>
-  <Navbar />
        <div className='mdz:flex grid-flow-col pt-10 gap-10 text-white hidden'>
         <div className='h-[100vh] w-4/12'>
         <div className='h-fit justify-center pt-[55px] flex font-[600] text-[48px]'>

@@ -9,4 +9,40 @@ body {
         transparent,
         rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   }
-  
+  @media only screen and (max-width: 600px){
+    .landing{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .sports{
+      text-align: center;
+      width: 100%
+    }
+    .text{
+        width: 100%;
+      }
+      .img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: rgb(136, 136, 136);
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+      
+        background: rgb(85, 85, 85);
+      }
+    }
