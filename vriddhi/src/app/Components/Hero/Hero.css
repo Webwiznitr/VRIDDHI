@@ -1,0 +1,10 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: "blanka";
+    font-weight: 400;
+    src: url("/Fonts/Blanka.otf") format("opentype");
+    font-display: swap;
+  }
+}
