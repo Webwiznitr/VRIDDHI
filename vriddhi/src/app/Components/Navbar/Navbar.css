@@ -1,0 +1,13 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: "nidus";
+    font-weight: 400;
+    src: url("/Fonts/navbarTxt.ttf") format("truetype");
+    font-display: swap;
+  }
+}
+nav {
+  background: linear-gradient(180deg, #151b1f 79.69%, rgba(21, 27, 31, 0) 100%);
+}
