@@ -14,16 +14,16 @@ const Footer = () => {
           <span className="font-bold ">Subham Gourav Biswal: 9337067360</span>
           <div className="flex items-start justify-start w-full gap-3">
             <Link href="https://www.linkedin.com/company/vriddhi-iit-ism-dhanbad/">
-              <img src="/email-ext.svg" alt="" />
+              <Image src="/email-ext.svg" alt="" width={"100"} height={"100"}/>
             </Link>
             <Link href="https://www.facebook.com/vriddhi.iitism/">
-              <img src="/facebook.svg" alt="" />
+              <Image src="/facebook.svg" alt="" width={"100"} height={"100"}/>
             </Link>
             <Link href="https://www.instagram.com/vriddhi.iitism/">
-              <img src="/instagram.svg" alt="" />
+              <Image src="/instagram.svg" alt="" width={"100"} height={"100"}/>
             </Link>
             <Link href="" >
-              <img src="/twitter.svg" alt="" />
+              <Image src="/twitter.svg" alt="" width={"100"} height={"100"}/>
             </Link>
           </div>
         </div>
@@ -60,10 +60,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center p-7 md:p-9 md:order-4  order-2">
-          <img src={"/map.jpg"} alt="" className="rounded-lg" />
+          <Image src={"/map.jpg"} alt="" className="rounded-lg" height={"100"} width={"1000"}/>
         </div>
         <div className="flex justify-center p-7 md:order-5 order-1  ">
-          <img src={"/all_logo.png"} alt="" className="rounded-lg" />
+          <Image src={"/all_logo.png"} alt="" className="rounded-lg"  height={"100"} width={"1000"}/>
         </div>
       </footer>
     </>
