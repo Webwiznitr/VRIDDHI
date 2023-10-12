@@ -27,7 +27,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-
 }
 
 #score-card-upcoming{
@@ -46,5 +45,4 @@ div::-webkit-scrollbar-thumb {
   border-radius: 10px;
   
 }
-
 
