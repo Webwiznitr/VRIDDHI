@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-//import Footer from "../footer/page";
+import Footer from "../footer/page";
 
 const page = () => {
   return (
@@ -23,7 +23,7 @@ const page = () => {
         <div className="flex flex-col gap-9 md:w-1/4 w-[15rem] ">
           {CotactData.map((item) => {
             return (
-              <div className="flex md:justify-start flex-col md:flex-row md:text-start justify-center text-center items-center gap-6 md:items-center">
+              <div key={item.id} className="flex md:justify-start flex-col md:flex-row md:text-start justify-center text-center items-center gap-6 md:items-center">
                 <Image
                   src={item.logo}
                   alt="logo"
@@ -38,7 +38,7 @@ const page = () => {
         </div>
       </div>
       <div className="mt-10">
-        //<Footer />
+        <Footer />
       </div>
     </section>
   );
