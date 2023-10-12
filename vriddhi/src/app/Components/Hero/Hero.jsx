@@ -10,7 +10,7 @@ function Hero() {
       <Image
         src={HomeBg}
         alt="HomeBg"
-        className="absolute top-0 w-screen object-cover"
+        className="relative top-0 w-screen object-cover"
       />
       <div className="absolute right-32 top-52 text-center flex flex-col justify-center items-center">
         <h1 className="font-blanka text-white text-8xl tracking-[0.9rem]">

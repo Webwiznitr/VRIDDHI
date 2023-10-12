@@ -36,9 +36,12 @@ function Navbar() {
             </Link>
           ))}
         </div>
+        <Link 
+        href={"/register"}> 
         <button className="font-nidus text-[#D1713C] text-base px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-2 hover:text-[#f19665] hover:border-[#f19665]">
           REGISTER
         </button>
+        </Link>
       </div>
       <a href="https://www.nitrkl.ac.in/" target="blank">
         <Image
