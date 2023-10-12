@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Pathway+Extreme&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +27,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-} */
+
+}
+
+#score-card-upcoming{
+  background: linear-gradient(154deg, #001F4E -12.93%, #000 106.32%);
+}
+#score-card-completed{
+  background: linear-gradient(154deg, #784F00 -12.93%, #000 106.32%);
+}
+div::-webkit-scrollbar {
+  display: none;
+  width: 6px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: #88888853;
+  border-radius: 10px;
+  
+}
+
+
