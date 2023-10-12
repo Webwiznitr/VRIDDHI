@@ -55,8 +55,8 @@ export default function Home() {
       }
     }
       
-  return (<div className=' w-[100%] mdz:h-[100%] h-[100%] bg-[#111A21]'>
-       <div className='mdz:flex grid-flow-col pt-10 gap-10 text-white hidden'>
+  return (<div className=' w-[100%] md:h-[100%] h-[100%] bg-[#111A21]'>
+       <div className='md:flex grid-flow-col pt-10 gap-10 text-white hidden'>
         <div className='h-[100vh] w-4/12'>
         <div className='h-fit justify-center pt-[55px] flex font-[600] text-[48px]'>
                 Registrations
@@ -262,7 +262,7 @@ An Excel sheet containing all the details of the students to their corresponding
         </div>}
        </div>
 
-       <div className='mdz:hidden text-white font-medium' style={{fontFamily:'Roboto, sans-serif'}}>
+       <div className='md:hidden text-white font-medium' style={{fontFamily:'Roboto, sans-serif'}}>
        <div className='pt-[8vh]'>
          </div>
          {success ? <div><div className=' text-[35px] m-2 font-[600] text-center'>Registrations</div>
