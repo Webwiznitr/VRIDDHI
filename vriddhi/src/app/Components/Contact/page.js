@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Footer from "../footer/page";
+//import Footer from "../footer/page";
 
 const page = () => {
   return (
@@ -38,7 +38,7 @@ const page = () => {
         </div>
       </div>
       <div className="mt-10">
-        <Footer />
+        //<Footer />
       </div>
     </section>
   );
