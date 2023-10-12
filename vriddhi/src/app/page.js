@@ -6,7 +6,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Score from "./Components/scorecard/page";
 import Contact from "./Components/contact/page";
-import Footer from "./Components/footer/page";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <Hero />
     <Score/>
     <Contact/>
-    <Footer/>
     </>
   );
 
