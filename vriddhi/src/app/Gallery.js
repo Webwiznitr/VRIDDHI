@@ -1,10 +1,10 @@
-import "./globals.css"
+
 import "./gallery.css"
 
 
 export default function Gallery() {
     return (
-        <div id="container" className="  w-full background-color  custom-gradient relative z-10 ">
+        <div id="container" className="  w-full background-color  relative z-10 ">
             <div id="head"
                 className="gallery-top-modified gallery-top flex w-[29rem] h-[7rem] mx-auto flex-col justify-center font-size font-size-1  flex-shrink-0 text-white text-center font-nidus-sans text-4xl font-normal leading-10 uppercase color ">
                 Gallery</div>
