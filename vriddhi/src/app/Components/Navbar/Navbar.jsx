@@ -51,6 +51,7 @@ function Navbar() {
               </Link>
             </li>
           ))}
+
           <button
             className={`font-nidus text-[#D1713C] text-sm md:text-base mx-2 md:mx-0 px-3 md:px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-1 my-1 mb-2 md:my-0 md:py-2 hover:text-[#f19665] hover:border-[#f19665] ${
               navbar ? "block" : "hidden"
@@ -70,6 +71,7 @@ function Navbar() {
         </a>
       </nav>
     </>
+
   );
 }
 
