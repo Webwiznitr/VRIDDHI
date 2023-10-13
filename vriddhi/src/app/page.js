@@ -8,6 +8,8 @@ import Hero from "./Components/Hero/Hero";
 import Score from "./Components/scorecard/page";
 import Contact from "./Components/Contact/page"
 import Tournaments from '../tournaments/tournaments'
+import About from './components/About'
+import Team from './components/Team'
 
 export default function Home() {
   return (
@@ -15,9 +17,12 @@ export default function Home() {
       <Hero/>
       <Tournaments/> 
     <Score/>
+    <About/>
+      <Team/>
     <Contact/>
     </>
   );
 
 
 }
+
