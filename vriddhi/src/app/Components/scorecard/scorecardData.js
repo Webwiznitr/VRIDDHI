@@ -2,156 +2,186 @@ const scoreDataUpcoming = [
 
     //CRICKET
     {
-        id:'cricket',
-        title:'VRDDHI CRICKET',
+        id:'1',
+        title:'VRIDDHI-CRICKET',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'cricket',
-        title:'VRDDHI CRICKET',
+        id:'2',
+        title:'VRIDDHI-CRICKET',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'cricket',
-        title:'VRDDHI CRICKET',
+        id:'3',
+        title:'VRIDDHI-CRICKET',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     //FOOTBALL
 
     {
-        id:'football',
-        title:'VRDDHI FOOTBALL',
+        id:'4',
+        title:'VRIDDHI-FOOTBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'football',
-        title:'VRDDHI FOOTBALL',
+        id:'5',
+        title:'VRIDDHI-FOOTBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'football',
-        title:'VRDDHI FOOTBALL',
+        id:'6',
+        title:'VRIDDHI-FOOTBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
     //BASKETBALL
     {
-        id:'basketball',
-        title:'VRDDHI BASKETBALL',
+        id:'7',
+        title:'VRIDDHI-BASKETBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'basketball',
-        title:'VRDDHI BASKETBALL',
+        id:'8',
+        title:'VRIDDHI-BASKETBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'basketball',
-        title:'VRDDHI BASKETBALL',
+        id:'9',
+        title:'VRIDDHI-BASKETBALL',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
     //KHOKHO
     {
-        id:'khokho',
-        title:'VRDDHI KHOKHO',
+        id:'10',
+        title:'VRIDDHI-KHOKHO',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'khokho',
-        title:'VRDDHI KHOKHO',
+        id:'11',
+        title:'VRIDDHI-KHOKHO',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'khokho',
-        title:'VRDDHI KHOKHO',
+        id:'12',
+        title:'VRIDDHI-KHOKHO',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
-    //KABADDI
+    //KABBADI
     {
-        id:'kabbadi',
-        title:'VRDDHI KABADDI',
+        id:'13',
+        title:'VRIDDHI-KABBADI',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
-    },
-
-    {
-        id:'kabbadi',
-        title:'VRDDHI KABADDI',
-        team_1:'NIT RKL',
-        team_2:'NIT SUR',
-        date:'23RD SEPT',
-        time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
     {
-        id:'kabbadi',
-        title:'VRDDHI KABADDI',
+        id:'14',
+        title:'VRIDDHI-KABBADI',
         team_1:'NIT RKL',
         team_2:'NIT SUR',
         date:'23RD SEPT',
         time:'6.30PM',
-        location:'STS'
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
+    },
+
+    {
+        id:'15',
+        title:'VRIDDHI-KABBADI',
+        team_1:'NIT RKL',
+        team_2:'NIT SUR',
+        date:'23RD SEPT',
+        time:'6.30PM',
+        location:'STS',
+        logo_1:'/',
+        logo_2:'/'
     },
 
 ];
@@ -159,117 +189,147 @@ const scoreDataUpcoming = [
 const scoreDataCompleted = [
     //CRICKET
     {
-        id: 'cricket',
+        id: '1',
         title: 'VRIDDHI-CRICKET',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'cricket',
+        id: '2',
         title: 'VRIDDHI-CRICKET',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'cricket',
+        id: '3',
         title: 'VRIDDHI-CRICKET',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
 
     //FOOTBALL
     {
-        id: 'football',
+        id: '4',
         title: 'VRIDDHI-FOOTBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'football',
+        id: '5',
         title: 'VRIDDHI-FOOTBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'football',
+        id: '6',
         title: 'VRIDDHI-FOOTBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
 
     //BASKETBALL
 
     {
-        id: 'basketball',
+        id: '7',
         title: 'VRIDDHI-BASKETBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'basketball',
+        id: '8',
         title: 'VRIDDHI-BASKETBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'basketball',
+        id: '9',
         title: 'VRIDDHI-BASKETBALL',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
 
     //KHOKHO
     {
-        id: 'khokho',
+        id: '10',
         title: 'VRIDDHI-KHOKHO',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'khokho',
+        id: '11',
         title: 'VRIDDHI-KHOKHO',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'khokho',
+        id: '12',
         title: 'VRIDDHI-KHOKHO',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
 
     //KABBADI
     {
-        id: 'kabbadi',
+        id: '13',
         title: 'VRIDDHI-KABBADI',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'kabbadi',
+        id: '14',
         title: 'VRIDDHI-KABBADI',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
     {
-        id: 'kabbadi',
+        id: '15',
         title: 'VRIDDHI-KABBADI',
         team_1: 'NIT RKL',
         team_2: 'NIT SUR',
+        logo_1:'/',
+        logo_2:'/',
         won: 'NIT RKL'
     },
 

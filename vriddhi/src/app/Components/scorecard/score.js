@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { scoreDataUpcoming, scoreDataCompleted } from "./scorecardData";
+import Image from "next/image";
 
 
 
@@ -16,7 +17,7 @@ const Score = () => {
 
   const [upcomingSport,setUpcomingSport] = useState(
     scoreDataUpcoming.filter((item)=>{
-      if(item.id == 'cricket'){
+      if(item.title == 'VRIDDHI-CRICKET'){
         return true;
       }else{
         return false;
@@ -27,7 +28,7 @@ const Score = () => {
   const changeUpcomingSport = (sportName) =>{
     setUpcomingSport(
       scoreDataUpcoming.filter((item)=>{
-        if(item.id == sportName){
+        if(item.title == sportName){
           return true;
         }else{
           return false;
@@ -38,7 +39,7 @@ const Score = () => {
 
   const [completedSport,setCompletedSport] = useState(
     scoreDataCompleted.filter((item)=>{
-      if(item.id == 'cricket'){
+      if(item.title == 'VRIDDHI-CRICKET'){
         return true;
       }else{
         return false;
@@ -49,7 +50,7 @@ const Score = () => {
   const changeCompletedSport = (sportName) =>{
     setCompletedSport(
       scoreDataCompleted.filter((item)=>{
-        if(item.id == sportName){
+        if(item.title == sportName){
           return true;
         }else{
           return false;
@@ -85,10 +86,10 @@ const Score = () => {
                 }if(kabbadiBtnState == 'scale-125'){
                   setKabbadiBtn('')
                 }
-                changeCompletedSport('cricket');
-                changeUpcomingSport('cricket');
+                changeCompletedSport('VRIDDHI-CRICKET');
+                changeUpcomingSport('VRIDDHI-CRICKET');
             }}
-            type="button"
+            
             className={`mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${cricketBtnState}`}
           >
             CRICKET
@@ -108,10 +109,10 @@ const Score = () => {
               }if(kabbadiBtnState == 'scale-125'){
                 setKabbadiBtn('')
               }
-              changeCompletedSport('football');
-                  changeUpcomingSport('football');
+              changeCompletedSport('VRIDDHI-FOOTBALL');
+                  changeUpcomingSport('VRIDDHI-FOOTBALL');
             }}
-            type="button"
+            
             className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${footballBtnState}`}
           >
             FOOTBALL
@@ -131,10 +132,10 @@ const Score = () => {
               }if(kabbadiBtnState == 'scale-125'){
                 setKabbadiBtn('')
               }
-              changeCompletedSport('basketball');
-              changeUpcomingSport('basketball');
+              changeCompletedSport('VRIDDHI-BASKETBALL');
+              changeUpcomingSport('VRIDDHI-BASKETBALL');
             }}
-            type="button"
+            
             className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${basketballBtnState}`}
           >
             BASKET BALL
@@ -154,10 +155,10 @@ const Score = () => {
               }if(kabbadiBtnState == 'scale-125'){
                 setKabbadiBtn('')
               }
-              changeCompletedSport('khokho');
-              changeUpcomingSport('khokho');
+              changeCompletedSport('VRIDDHI-KHOKHO');
+              changeUpcomingSport('VRIDDHI-KHOKHO');
             }}
-            type="button"
+            
             className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${khokhoBtnState}`}
           >
             KHOKHO
@@ -177,10 +178,10 @@ const Score = () => {
               }if(khokhoBtnState == 'scale-125'){
                 setKhokhoBtn('')
               }
-              changeCompletedSport('kabbadi');
-              changeUpcomingSport('kabbadi');
+              changeCompletedSport('VRIDDHI-KABBADI');
+              changeUpcomingSport('VRIDDHI-KABBADI');
             }}
-            type="button"
+            
             className={`w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${kabbadiBtnState}`}
           >
             KABBADI
@@ -213,7 +214,7 @@ const Score = () => {
                             <div className={`w-[58%] h-full flex flex-col items-center`}>
                               <div className={`w-[90%] flex`}>
                                 <div className={`w-[30%] h-[18px] bg-black`}>
-                                  <img src="/" alt=" " />
+                                  <Image src={data.logo_1} alt=" " width={100} height={100} />
                                 </div>
                                 <div className={`w-[70%] flex items-center`}>
                                   <h1 className={`ml-1`}>{data.team_1}</h1>
@@ -225,7 +226,7 @@ const Score = () => {
 
                               <div className={`w-[90%] flex`}>
                                 <div className={`w-[30%] h-[18px] bg-black`}>
-                                  <img src="/" alt=" " />
+                                  <Image src={data.logo_2} alt=" " width={100} height={100} />
                                 </div>
                                 <div className={`w-[70%] flex items-center`}>
                                   <h1 className={`ml-1`}>{data.team_2}</h1>
@@ -278,7 +279,7 @@ const Score = () => {
                               <div className={`w-[58%] h-full flex flex-col items-center`}>
                                 <div className={`w-[90%] flex`}>
                                   <div className={`w-[30%] h-[18px] bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_1} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[70%] flex items-center`}>
                                     <h1 className={`ml-1`}>{data.team_1}</h1>
@@ -290,7 +291,7 @@ const Score = () => {
 
                                 <div className={`w-[90%] flex`}>
                                   <div className={`w-[30%] h-[18px] bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_2} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[70%] flex items-center`}>
                                     <h1 className={`ml-1`}>{data.team_2}</h1>
@@ -351,10 +352,10 @@ const Score = () => {
                   }if(kabbadiBtnState == 'scale-125'){
                     setKabbadiBtn('')
                   }
-                  changeCompletedSport('cricket');
-                  changeUpcomingSport('cricket');
+                  changeCompletedSport('VRIDDHI-CRICKET');
+                  changeUpcomingSport('VRIDDHI-CRICKET');
                 }}
-                type="button"
+                
                 className={`pc w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 ${cricketBtnState}`}
               >
                 CRICKET
@@ -374,10 +375,10 @@ const Score = () => {
                   }if(kabbadiBtnState == 'scale-125'){
                     setKabbadiBtn('')
                   }
-                  changeCompletedSport('football');
-                  changeUpcomingSport('football');
+                  changeCompletedSport('VRIDDHI-FOOTBALL');
+                  changeUpcomingSport('VRIDDHI-FOOTBALL');
                 }}
-                type="button"
+                
                 className={` w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 ${footballBtnState}`}
               >
                 FOOTBALL
@@ -397,10 +398,10 @@ const Score = () => {
                   }if(kabbadiBtnState == 'scale-125'){
                     setKabbadiBtn('')
                   }
-                  changeCompletedSport('basketball');
-                  changeUpcomingSport('basketball');
+                  changeCompletedSport('VRIDDHI-BASKETBALL');
+                  changeUpcomingSport('VRIDDHI-BASKETBALL');
                 }}
-                type="button"
+                
                 className={` w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 ${basketballBtnState}`}
               >
                 BASKET BALL
@@ -420,10 +421,10 @@ const Score = () => {
                   }if(kabbadiBtnState == 'scale-125'){
                     setKabbadiBtn('')
                   }
-                  changeCompletedSport('khokho');
-                  changeUpcomingSport('khokho');
+                  changeCompletedSport('VRIDDHI-KHOKHO');
+                  changeUpcomingSport('VRIDDHI-KHOKHO');
                 }}
-                type="button"
+                
                 className={` w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 ${khokhoBtnState}`}
               >
                 KHOKHO
@@ -443,10 +444,10 @@ const Score = () => {
                   }if(khokhoBtnState == 'scale-125'){
                     setKhokhoBtn('')
                   }
-                  changeCompletedSport('kabbadi');
-                  changeUpcomingSport('kabbadi');
+                  changeCompletedSport('VRIDDHI-KABBADI');
+                  changeUpcomingSport('VRIDDHI-KABBADI');
                 }}
-                type="button"
+                
                 className={`w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 ${kabbadiBtnState}`}
               >
                 KABBADI
@@ -479,7 +480,7 @@ const Score = () => {
                                 </div>
                                 <div className={`w-[90%] h-[20%] flex`}>
                                   <div className={`w-[20%] h-full bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_1} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[80%] flex items-center`}>
                                     <h1 className={`ml-4`}>{data.team_1}</h1>
@@ -491,7 +492,7 @@ const Score = () => {
 
                                 <div className={`w-[90%] h-[20%] flex`}>
                                   <div className={`w-[20%] h-full bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_2} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[80%] flex items-center`}>
                                     <h1 className={`ml-4`}>{data.team_2}</h1>
@@ -541,7 +542,7 @@ const Score = () => {
                                 </div>
                                 <div className={`w-[90%] h-[20%] flex`}>
                                   <div className={`w-[20%] h-full bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_1} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[80%] flex items-center`}>
                                     <h1 className={`ml-4`}>{data.team_1}</h1>
@@ -553,7 +554,7 @@ const Score = () => {
 
                                 <div className={`w-[90%] h-[20%] flex`}>
                                   <div className={`w-[20%] h-full bg-black`}>
-                                    <img src="/" alt=" " />
+                                    <Image src={data.logo_2} alt=" " width={100} height={100} />
                                   </div>
                                   <div className={`w-[80%] flex items-center`}>
                                     <h1 className={`ml-4`}>{data.team_2}</h1>
