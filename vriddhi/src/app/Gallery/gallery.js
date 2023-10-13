@@ -1,5 +1,5 @@
 
-import "./gallery.css"
+import "../Gallery/gallery.css"
 
 
 export default function Gallery() {
@@ -7,7 +7,7 @@ export default function Gallery() {
         <div id="container" className="  w-full background-color  relative z-10 ">
             <div id="head"
                 className="gallery-top-modified gallery-top flex w-[29rem] h-[7rem] mx-auto flex-col justify-center font-size font-size-1  flex-shrink-0 text-white text-center font-nidus-sans text-4xl font-normal leading-10 uppercase color ">
-                Gallery</div>
+                Gallery</div>   
             <div id="main" className="w-[92%] mx-auto flex flex-col items-center justify-center h-[38rem] z-20 relative">
                 <div id="top" className="w-full  h-[12.6875rem] up-675 up-375 up-452  flex-shrink-0 linear z-40 relative" ></div>
                 <div id="chat-container" className="w-full  mt-[-9rem] z-30 relative  mb-[-11rem] height overflow-y-auto custom-scroll-pulse sc-bg ">
