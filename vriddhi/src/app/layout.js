@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./Components/Navbar/Navbar";
 import connectMongoDB from '../../libs/mongodb'
+import Footer from "./Components/Footer/page";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
 
         <Navbar />
         {children}
+      <Footer/>
       </body>
 
     </html>
