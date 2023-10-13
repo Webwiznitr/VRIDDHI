@@ -18,6 +18,13 @@ module.exports = {
         nidus: ["nidus", "sans-serif"],
         blanka: ["blanka", "sans-serif"],
       },
+
+      screens: {
+        'mdy' : {'max': '1023px'},
+        'mdx' : '1024px',
+        'mdt': { 'raw': '(max-height: 760px)' },
+        'mdxx':'1500px'
+      }
     },
   },
   plugins: [],
