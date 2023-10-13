@@ -71,7 +71,7 @@ const Score = () => {
             type="button"
             className="mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 scale-125"
           >
-            CRICKET
+            <div className="p-1 rounded-[25px] bg-[#FFFCFC]">CRICKET</div>
           </button>
 
           <button
@@ -86,7 +86,7 @@ const Score = () => {
             type="button"
             className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2"
           >
-            FOOTBALL
+            <div className="p-1 rounded-[25px] bg-[#FFFCFC]">FOOTBALL</div>
           </button>
 
           <button
@@ -101,7 +101,7 @@ const Score = () => {
             type="button"
             className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2"
           >
-            BASKET BALL
+            <div className="p-1 rounded-[25px] bg-[#FFFCFC]">BASKET BALL</div>
           </button>
 
           <button
@@ -116,7 +116,7 @@ const Score = () => {
             type="button"
             className=" w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2"
           >
-            KHOKHO
+            <div className="p-1 rounded-[25px] bg-[#FFFCFC]">KHOKHO</div>
           </button>
 
           <button
@@ -131,7 +131,7 @@ const Score = () => {
             type="button"
             className="w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2"
           >
-            KABBADI
+            <div className="p-1 rounded-[25px] bg-[#FFFCFC]">KABBADI</div>
           </button>
         </div>
 
@@ -1426,8 +1426,8 @@ const Score = () => {
                 }}
                 type="button"
                 className="pc w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 scale-125"
-              >
-                CRICKET
+              ><div className="p-1 rounded-[25px] bg-[#FFFCFC]">CRICKET</div>
+                
               </button>
 
               <button
@@ -1442,7 +1442,7 @@ const Score = () => {
                 type="button"
                 className=" w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-                FOOTBALL
+               <div className="p-1 rounded-[25px] bg-[#FFFCFC]">FOOTBALL</div>
               </button>
 
               <button
@@ -1457,7 +1457,7 @@ const Score = () => {
                 type="button"
                 className=" w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-                BASKET BALL
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">BASKET BALL</div>
               </button>
 
               <button
@@ -1472,7 +1472,7 @@ const Score = () => {
                 type="button"
                 className=" w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-                KHOKHO
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">KHOKHO</div>
               </button>
 
               <button
@@ -1487,7 +1487,7 @@ const Score = () => {
                 type="button"
                 className="w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-                KABBADI
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">KABBADI</div>
               </button>
             </div>
 
