@@ -1,6 +1,7 @@
 .main{
     background-color: black;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(to top, #181821, rgba(255,0,0,0), #181D22);
 }
 .heading{
     margin: auto;
@@ -14,6 +15,7 @@
     text-decoration-line:underline ;
     text-underline-offset: 15px;
     margin-bottom: 4rem;
+    padding-top: 5rem;
 }
 .trophymobile{
     display: none;
@@ -134,7 +136,8 @@
   } 
   @media screen and (max-width: 720px){
     .main{
-        margin-bottom: 12rem;
+        padding-bottom: 12rem;
+        background-image: linear-gradient(to top, #181821, rgba(255,0,0,0), #242B31);
     }
     .submain{
         grid-template-columns: auto;
