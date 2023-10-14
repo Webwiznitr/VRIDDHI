@@ -58,8 +58,8 @@ export default function Home() {
   return (<div className=' w-[100%] r:h-[100%] h-[100%] bg-[#111A21] pt-[70px]'>
        <div className='r:flex grid-flow-col pt-10 gap-10 text-white hidden'>
         <div className='h-[100vh] w-4/12'>
-        <div className='h-fit justify-center pt-[55px] flex font-[600] text-[48px]'>
-                Registrations
+        <div className='h-fit justify-center text-center pt-[55px] flex font-[600] text-[48px]'>
+                Register <br/>and<br/>Get Started
             </div>
         </div>
         {success ? <div className='h-[100vh] block text-white ' style={{fontFamily:'Roboto, sans-serif'}}  >
@@ -266,7 +266,7 @@ An Excel sheet containing all the details of the students to their corresponding
        <div className='r:hidden text-white font-medium' style={{fontFamily:'Roboto, sans-serif'}}>
        <div className='pt-[8vh]'>
          </div>
-         {success ? <div><div className=' text-[35px] m-2 font-[600] text-center '>Registrations</div>
+         {success ? <div className='-mt-12'><div className=' text-[35px] m-2 font-[600] text-center '>Register and Get Started</div>
         <div className=' block h-fit mt-4  w-11/12 m-auto bg-[#252b36] rounded p-8'>
         <div> 
         <form className='grid m-auto grid-row-auto gap-6 p-2  '>
