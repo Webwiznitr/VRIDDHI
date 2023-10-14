@@ -10,13 +10,14 @@ import Contact from "./Components/Contact/page"
 import Tournaments from '../tournaments/tournaments'
 import About from './components/About'
 import Team from './components/Team'
-
+import Gallery from './Components/Gallery/gallery';
 export default function Home() {
   return (
     <>
       <Hero/>
       <Tournaments/> 
     <Score/>
+    <Gallery/>
     <About/>
       <Team/>
     <Contact/>

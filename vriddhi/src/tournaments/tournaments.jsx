@@ -15,9 +15,11 @@ import rightmobile from './assets/rightmobile.png'
 
 export default function Footer() {
   return (
+   
    <div className="main">
     <h1 className="heading">TOURNAMENT</h1>
     <Image src={trophy} className="trophymobile"></Image>
+    <div className='content'>
     <div className='leftlines'>
         <Image src={leftmobile} className='leftline1'></Image>
         <Image src={leftmobile} className='leftline2'></Image>
@@ -89,7 +91,8 @@ export default function Footer() {
         <Image src={rightmobile} className='rightline1'></Image>
         <Image src={rightmobile} className='rightline2'></Image>
         <Image src={rightmobile} className='rightline3'></Image>
-      </div>
+        </div>
+         </div>
     </div>
   );
 }

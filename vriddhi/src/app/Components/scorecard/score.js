@@ -90,7 +90,7 @@ const Score = () => {
                 changeUpcomingSport('VRIDDHI-CRICKET');
             }}
             
-            className={`mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${cricketBtnState}`}
+            className={`mob w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[6px] my-2 ${cricketBtnState}`}
           >
             CRICKET
           </button>
@@ -113,7 +113,7 @@ const Score = () => {
                   changeUpcomingSport('VRIDDHI-FOOTBALL');
             }}
             
-            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${footballBtnState}`}
+            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[6px] my-2 ${footballBtnState}`}
           >
             FOOTBALL
           </button>
@@ -136,7 +136,7 @@ const Score = () => {
               changeUpcomingSport('VRIDDHI-BASKETBALL');
             }}
             
-            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${basketballBtnState}`}
+            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[6px] my-2 ${basketballBtnState}`}
           >
             BASKET BALL
           </button>
@@ -159,7 +159,7 @@ const Score = () => {
               changeUpcomingSport('VRIDDHI-KHOKHO');
             }}
             
-            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${khokhoBtnState}`}
+            className={` w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[6px] my-2 ${khokhoBtnState}`}
           >
             KHOKHO
           </button>
@@ -182,7 +182,7 @@ const Score = () => {
               changeUpcomingSport('VRIDDHI-KABBADI');
             }}
             
-            className={`w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[10px] my-2 ${kabbadiBtnState}`}
+            className={`w-[16%] h-[25px] rounded-[12px] bg-[#D8DFE1] text-[6px] my-2 ${kabbadiBtnState}`}
           >
             KABBADI
           </button>
