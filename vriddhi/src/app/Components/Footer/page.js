@@ -11,7 +11,7 @@ const Footer = () => {
             Vriddhi 2022 intends to feature major Sports tournaments such as
             Football, Cricket, Badminton, and much more.
           </span>
-          <span className="font-bold ">Subham Gourav Biswal: 9337067360</span>
+          <span className="font-bold ">John Doe: 9000000000</span>
           <div className="flex items-start justify-start w-full gap-3">
             <Link href="https://www.linkedin.com/company/vriddhi-iit-ism-dhanbad/">
               <img src="/email-ext.svg" alt="" />
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col md:order-2 order-4  items-start md:ml-9 gap-4 justify-start p-7 md:p-0">
-          <h1 className="text-xl mt-7 uppercase ">Qucik Links</h1>
+          <h1 className="text-xl mt-7 uppercase ">Quick Links</h1>
           <div>
             <ul>
               {QucikLinks.map((item, index) => {

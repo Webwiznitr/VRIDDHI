@@ -45,7 +45,7 @@ function Navbar() {
               <Link
                 onClick={() => setNavbar((navbar) => !navbar)}
                 href={"/"}
-                className="text-white text-xs font-normal py-6 px-5 font-nidus hover:text-blue-800"
+                className="text-white text-sm font-normal py-6 px-5 font-nidus hover:text-blue-800"
               >
                 {navComponent.title}
               </Link>
