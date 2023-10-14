@@ -5,7 +5,6 @@
 .heading{
     margin: auto;
     text-align: center;
-    width: 50%;
     flex-shrink: 0;
     color: white;
     font-family: Nidus 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -24,6 +23,10 @@
    grid-template-columns: auto auto auto;
    justify-content: center;
    margin: 3rem;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
 }
 .leftlines{
     display: none;
@@ -130,9 +133,12 @@
     
   } 
   @media screen and (max-width: 720px){
+    .main{
+        margin-bottom: 12rem;
+    }
     .submain{
         grid-template-columns: auto;
-        position: absolute;
+        position: relative;
         left: 0; 
         right: 0; 
         margin-left: auto; 
@@ -141,7 +147,7 @@
         text-align: center;
     }
     .heading{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .center{
         display: none;
@@ -170,7 +176,7 @@
     }
     .leftlines,.rightlines{
         display: inline-block;
-        position: absolute;
+        position: relative;
         top:11rem;
     }
     .leftlines{
@@ -202,7 +208,15 @@
     .rightline3{
         margin-top: 11.75rem;
     }
- 
+    .submain{
+        margin-top: -10rem;
+    }
+    .leftlines{
+        margin-top: -13rem;
+    }
+    .rightlines{
+        margin-top: -13rem;
+    }
 
   }
   @media screen and (max-width: 660px){
@@ -240,41 +254,13 @@
     
     }
   }
-  @media screen and (max-width: 410px){
-    .submain{
-        grid-template-columns: auto;
-    }
-    .heading{
-        font-size: 1.2rem;
-        letter-spacing: 0.3rem;
-    }
-    .card{
-        margin-top: 1rem;
-    }
-    .leftlines{
-        left: 0.5rem;
-        
-    }
-    .rightlines{
-        right: 0.5rem;
+  @media screen and  (max-width: 410px){
+     .leftlines img{
+          height: 210px;
+     }
+     .rightlines img{
+        height: 210px;
+     }
+  };
     
-    }
-    .leftline1{
-        margin-top: 9.5rem;
-    }
-    .leftline2{
-       margin-top: 12.5rem;
-    }
-    .leftline3{
-        margin-top: 11.5rem;
-    }
-    .rightline1{
-        margin-top: 22rem;
-    }
-    .rightline2{
-        margin-top: 12.5rem;
-    }
-    .rightline3{
-        margin-top: 11.5rem;
-    }
-  }
+  
