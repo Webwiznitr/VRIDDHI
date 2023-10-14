@@ -16,19 +16,19 @@ function Hero() {
           alt="HomeBg"
           className="w-full object-cover absolute top-0"
         />
-        <div className="absolute right-[10%] top-[30%] text-center flex flex-col justify-center items-center">
-          <h1 className="font-blanka text-white text-8xl tracking-[0.9rem]">
+        <div className="absolute right-[7%] lg:right-[10%] top-[20%] lg:top-[30%] text-center flex flex-col justify-center items-center">
+          <h1 className="font-blanka text-white text-7xl lg:text-8xl tracking-[0.9rem]">
             VRIDDHI
           </h1>
-          <Image src={year} alt="year" className="py-11" />
-          <button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-3xl text-[#2E2E2E]">
+          <Image src={year} alt="year" className="py-8 lg:py-11" />
+          <button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-2xl lg:text-3xl text-[#2E2E2E]">
             JOIN US
           </button>
         </div>
       </main>
       {/* Phone View */}
       <main className="w-screen h-screen md:hidden">
-        <div className="bg-[#111A21] bg-opacity-[0.35] bg-blend-multiply opacity-90 w-full h-full relative">
+        <div className="bg-[#111A21] bg-blend-multiply w-full h-full relative">
           <Image
             src={HomeMobile}
             alt="HomeMobile"
@@ -51,10 +51,10 @@ function Hero() {
           className="absolute bottom-0 right-0"
         />
         <div className="absolute text-center flex flex-col justify-center items-center top-[45%] w-full m-auto">
-          <h1 className="font-blanka text-white text-6xl tracking-[0.9rem]">
+          <h1 className="font-blanka text-white text-7xl tracking-[0.9rem]">
             VRIDDHI
           </h1>
-          <Image src={year} alt="year" className="py-11 w-[30%]" />
+          <Image src={year} alt="year" className="py-8 w-[30%]" />
           <button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-xl text-[#2E2E2E]">
             JOIN US
           </button>

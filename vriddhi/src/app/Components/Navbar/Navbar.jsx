@@ -45,20 +45,21 @@ function Navbar() {
               <Link
                 onClick={() => setNavbar((navbar) => !navbar)}
                 href={"/"}
-                className="text-white text-xs font-normal py-6 px-5 font-nidus hover:text-blue-800"
+                className="text-white xl:text-lg lg:text-sm text-[11px] font-normal py-6 px-3 lg:px-5 font-nidus hover:text-blue-800"
               >
                 {navComponent.title}
               </Link>
             </li>
           ))}
-
-          <button
-            className={`font-nidus text-[#D1713C] text-sm md:text-base mx-2 md:mx-0 px-3 md:px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-1 my-1 mb-2 md:my-0 md:py-2 hover:text-[#f19665] hover:border-[#f19665] ${
-              navbar ? "block" : "hidden"
-            } md:flex`}
-          >
-            REGISTER
-          </button>
+          <Link href={"/register"}>
+            <button
+              className={`font-nidus text-[#D1713C] text-sm md:text-base mx-2 md:mx-0 px-3 md:px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-1 my-1 mb-2 md:my-0 md:py-2 hover:text-[#f19665] hover:border-[#f19665] ${
+                navbar ? "block" : "hidden"
+              } md:flex`}
+            >
+              REGISTER
+            </button>
+          </Link>
         </ul>
         <a href="https://www.nitrkl.ac.in/" target="blank">
           <Image
@@ -71,7 +72,6 @@ function Navbar() {
         </a>
       </nav>
     </>
-
   );
 }
 
