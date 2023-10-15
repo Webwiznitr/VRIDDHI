@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <section className="min-h-screen bg-black flex flex-col text-white justify-center items-center overflow-hidden ">
+    <section className="min-h-screen bg-[#111A21]  flex flex-col text-white justify-center items-center overflow-hidden ">
       <h1 className="text-5xl uppercase mb-20 ">Conact US</h1>
       <div
         className="flex flex-col md:flex-row justify-center  items-center gap-11
@@ -31,6 +31,7 @@ const page = () => {
                   height={1}
                   className="w-[39px] h-[29px] "
                 />
+              
                 <span className="text-white w-56 md:w-auto">{item.name}</span>
               </div>
             );
@@ -53,12 +54,12 @@ const CotactData = [
   },
   {
     id: 2,
-    name: "nitr.vriddhi@gmail.com",
+    name: 'nitr.vriddhi@gmail.com',
     logo: "/email.svg",
   },
   {
     id: 2,
-    name: "Subham Gourav Biswal: 9337067360",
+    name: "John Doe: 9000000000",
     logo: "/call.svg",
   },
 ];

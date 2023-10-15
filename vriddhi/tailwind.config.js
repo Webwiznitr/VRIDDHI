@@ -20,10 +20,11 @@ module.exports = {
       },
 
       screens: {
-        'md' : {'max': '1023px'},
+        'mdy' : {'max': '1023px'},
         'mdx' : '1024px',
         'mdt': { 'raw': '(max-height: 760px)' },
-        'mdxx':'1500px'
+        'mdxx':'1500px',
+        'r':'1135px'
       }
     },
   },
