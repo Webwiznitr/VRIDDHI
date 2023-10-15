@@ -3,7 +3,7 @@ const TeamData = [
     {
      id:1,
      name: "John Doe",
-     image: "/images/Team/rectangle.png",
+     image: "/images/Team/team img.jpg",
      info: "member",
 
     },
@@ -11,7 +11,7 @@ const TeamData = [
     {
         id:2,
         name: "John Doe",
-        image: "/images/Team/rectangle.png",
+        image: "/images/Team/team img.jpg",
         info: "member",
    
        },
@@ -19,7 +19,7 @@ const TeamData = [
     {
         id:3,
         name: "John Doe",
-        image: "/images/Team/rectangle.png",
+        image: "/images/Team/team img.jpg",
         info: "member",
    
     },
@@ -27,7 +27,7 @@ const TeamData = [
     {
         id:4,
         name: "John Doe",
-        image: "/images/Team/rectangle.png",
+        image: "/images/Team/team img.jpg",
         info: "member",
    
     },
@@ -35,7 +35,7 @@ const TeamData = [
     {
         id:5,
         name: "John Doe",
-        image: "/images/Team/rectangle.png",
+        image: "/images/Team/team img.jpg",
         info: "member",
    
     },
@@ -43,7 +43,7 @@ const TeamData = [
     {
         id:6,
         name: "John Doe",
-        image: "/images/Team/rectangle.png",
+        image: "/images/Team/team img.jpg",
         info: "member",
    
     },
