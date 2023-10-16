@@ -22,7 +22,7 @@ const page = () => {
         <div className="flex flex-col gap-9 md:w-1/4 w-[15rem] ">
           {ContactData.map((item) => {
             return (
-              <div className="flex md:justify-start flex-col md:flex-row md:text-/start justify-center text-center items-center gap-6 md:items-center">
+              <div key={item.id} className="flex md:justify-start flex-col md:flex-row md:text-/start justify-center text-center items-center gap-6 md:items-center">
                 <a href={item.mail} target="_blank" className="">
                   <Image
                     src={item.logo}
