@@ -14,7 +14,7 @@ import Gallery from './Components/Gallery/gallery';
 
 export default function Home() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <Hero/>
       <Tournaments/> 
     <Score/>
@@ -22,7 +22,7 @@ export default function Home() {
     <About/>
       <Team/>
     <Contact/>
-    </>
+    </div>
   );
 
 
