@@ -9,7 +9,7 @@ const TeamCard = ({data}) => {
 
             return(
 
-                <div className='w-[24vw] h-[27vh] relative md:w-[40vw] md:h-[13vh]'  key={element.id} >
+                <div className='md:w-[24vw] md:h-[27vh] relative w-[40vw] h-[13vh]'  key={element.id} >
                 <Image className='rounded-[6px]'
                 src={element.image}
                 layout='fill'
