@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:order-1 order-5 justify-start gap-4 items-start md:ml-5 p-7 md:p-0 ">
           <h1 className="text-xl mt-7 uppercase">About</h1>
           <span>
-            Vriddhi 2022 intends to feature major Sports tournaments such as
+            Vriddhi 2023 intends to feature major Sports tournaments such as
             Football, Cricket, Badminton, and much more.
           </span>
           <a href="mailto:uday07512@gmail.com" className="font-bold ">

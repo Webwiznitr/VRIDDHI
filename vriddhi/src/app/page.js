@@ -6,6 +6,7 @@ import Image from "next/image";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Score from "./Components/scorecard/score";
+import Tally from "./Components/Tally/tally";
 import Contact from "./Components/Contact/page"
 import Tournaments from '../tournaments/tournaments'
 import About from "./components/About"
@@ -17,11 +18,12 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Hero/>
       <Tournaments/> 
-    <Score/>
-    <Gallery/>
-    <About/>
+      <Score/>
+      <Tally/>
+      <Gallery/>
+      <About/>
       <Team/>
-    <Contact/>
+      <Contact/>
     </div>
   );
 
