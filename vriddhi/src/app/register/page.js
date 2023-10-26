@@ -1,11 +1,13 @@
 "use client";
 import  React from 'react';
-
+import axios from 'axios';
 import { useState} from 'react';
 import * as XLSX from 'xlsx';
 
 
 export default function Home() {
+    const [file1, setFile1] = useState('');
+    const [file2, setFile2] = useState('');
 
     const [form,setForm]=useState({
         email:"",
@@ -15,7 +17,9 @@ export default function Home() {
         events:[],
         elist:[],
         participants:"",
-        coaches:""
+        coaches:"",
+        url:[],
+        transactionid:""
     })
     const [error,setError]=useState('');
     const [submitdisable,setSubmitdisable]=useState(false);  
@@ -24,11 +28,50 @@ export default function Home() {
     const handle = async (e) => {
         
         e.preventDefault();
-        if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 || !form.contact || !form.Wnumber  || !form.participants || !form.coaches ){
+        const formData1 = new FormData();
+        const formData2 = new FormData();
+        formData1.append('file', file1);
+        formData2.append('file', file2);
+        formData1.append('upload_preset','vriddhi');
+        formData2.append('upload_preset','vriddhi');
+        try {
+            const list=[]
+            const response1 = await fetch(
+              'https://api.cloudinary.com/v1_1/dlt7pwi85/image/upload',
+              {
+                method:'POST',
+                body:formData1
+              }
+            ).then(r=>r.json())
+           
+            list.push(response1.secure_url)
+
+            const response2 = await fetch(
+                'https://api.cloudinary.com/v1_1/dlt7pwi85/image/upload',
+                {
+                  method:'POST',
+                  body:formData2
+                }
+              ).then(r=>r.json())
+             list.push(response2.secure_url)
+
+             setForm((prev)=>(
+                {...prev,url:list}
+            ));
+            
+          } catch (error) {
+            console.error(error);
+          };
+          
+          
+if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 || !form.contact || !form.Wnumber  || !form.participants || !form.coaches || !form.transactionid  ){
           setError("Fill All Fields Please")
           return ;
+      } else if(form.url.length==0){
+        setError("Upload Complete, Click submit Again")
+        return ;
       }
-      console.log(form)
+     
       setError("");
       setSubmitdisable(true);
       setSuccess(false);
@@ -40,8 +83,12 @@ export default function Home() {
         elist:form.elist,
         Wnumber:form.Wnumber,
         participants:form.participants,
-        coaches:form.coaches
+        coaches:form.coaches,
+        url:form.url,
+        transactionid:form.transactionid
+        
     })
+    console.log(data)
       try{
         await fetch('http://localhost:3000/api/user',{
             method:"POST",
@@ -62,7 +109,7 @@ export default function Home() {
                 Register <br/>and<br/>Get Started
             </div>
         </div>
-        {success ? <div className='h-[100vh] block text-white ' style={{fontFamily:'Roboto, sans-serif'}}  >
+        {success ? <div className='h-[100%] pb-10 block text-white  ' style={{fontFamily:'Roboto, sans-serif'}}  >
             
             <div className='grid grid-cols-2 font-medium'>
             <div className='p-2'>
@@ -83,7 +130,7 @@ export default function Home() {
             }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="number"/>
             <div>
             <div>Confirmed Events</div>
-            <div className='grid grid-cols-2 mb-4'>
+            <div className='grid grid-cols-2 mb-[52px]'>
             <div>
             <input onChange={()=>{
                 const index=form.events.indexOf("Cricket(Men)");
@@ -204,13 +251,7 @@ export default function Home() {
                 
             }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="participants"/>
             </div>
-            <div>Total Number of Coaches</div>
-            <input  onChange={(event)=>{
-                setForm((prev)=>(
-                    {...prev,coaches:event.target.value}
-                ));
-                
-            }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="coach"/>
+            
             </div></div>
             
             <div className='p-2'>
@@ -232,7 +273,7 @@ export default function Home() {
             }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="wnumber"/>
             <div className='text-white w-[350px] text-start'><span className='underline underline-offset-4'>Upload Final Registration List</span> <br/>
 An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample</span> </a></div>
-<input className="pl-0 pt-10 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+<input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
                 const file = event.target.files[0];
@@ -251,18 +292,57 @@ An Excel sheet containing all the details of the students to their corresponding
             placeholder="Excel"
             accept=".xlsx"
             /> 
-            
-            </div><button disabled={submitdisable} onClick={handle} className='border-2 text-center w-[350px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Submit</button></div>
+            <div>Total Number of Coaches</div>
+            <input  onChange={(event)=>{
+                setForm((prev)=>(
+                    {...prev,coaches:event.target.value}
+                ));
+                
+            }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="coach"/>
+            </div></div>
             </div>
+            <div className='bg-gradient-to-br from-[rgb(0,31,78)] to-[rgb(0,5,13)] rounded-lg w-[750px] pb-4 mb-4'>
+            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
+           
+            <div className='m-auto w-fit p-10'>
+            <div>Transaction ID/UTR<br/><span className='text-sm'>Transaction Number recieved upon completion of payment.</span></div>
+            <input  onChange={(event)=>{
+                setForm((prev)=>(
+                    {...prev,transactionid:event.target.value}
+                ));
+                
+            }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[400px] p-2 mb-4 bg-slate-600' type="text" name="t-id"/>
+            <div>Screenshot of Payment Completion</div>
+            <input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            type="file"
+            onChange={(event)=>{
+                setFile1(event.target.files[0])
+            }}
+            placeholder="jpg"
+            accept=".jpg"/>
+            <div>Upload Institute ID or ID Proof of Contingent Leader</div>
+            <input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            type="file"
+            onChange={(event)=>{
+                setFile2(event.target.files[0])
+            }}
+            placeholder="jpg"
+            accept=".jpg"/>
+            </div>
+            </div>
+            <div className='w-full justify-center m-auto text-center'>
             <div className='block m-auto text-red-500 text-center'>{error}</div>
+            <button disabled={submitdisable} onClick={handle} className='border-2 text-center w-[200px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Submit</button>
+            </div>
+            
         </div> : <div className='h-[100vh] block text-white ' style={{fontFamily:'Roboto, sans-serif'}} >
         <div className='h-fit pt-[55px] flex font-[600] text-[48px]'>
                Your Team has been succesfully Registered
             </div>
-            <button className='border-2  text-center w-[250px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Continue To Payment</button>
+          <a href="/"  ><button className='border-2  text-center w-[250px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Home</button></a>
         </div>}
        </div>
-
+{/*mobile*/}
        <div className='r:hidden text-white font-medium' style={{fontFamily:'Roboto, sans-serif'}}>
        <div className='pt-[8vh]'>
          </div>
@@ -294,7 +374,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="name" placeholder='Whatsapp Number (Contingent Leader)' />
-            <div>Confirmed Events</div>
+            <div className='font-bold'>Confirmed Events</div>
             <div className='grid grid-cols-2 text-sm'>
             <div>
             <input onChange={()=>{
@@ -401,7 +481,7 @@ An Excel sheet containing all the details of the students to their corresponding
             <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
 
             </div>
-            <div className='text-white  text-sm text-start'><span className='underline underline-offset-4'>Upload Final Registration List</span> <br/>
+            <div className='text-white  text-sm text-start'><span className=' font-bold underline underline-offset-4'>Upload Final Registration List</span> <br/>
 An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample </span> </a><input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
@@ -434,11 +514,37 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="name" placeholder='Total Number of Coaches'/>
+            <div className='text-white font-bold  text-lg text-center'>Payment</div>
+            <div className=' text-center  '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><ul className='font-semibold text-center'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg text-center font-bold text-red-400 '>Note : Any Sort of Misconduct is highly punishable.</span>
+            <hr/>
+            <input  onChange={(event)=>{
+                setForm((prev)=>(
+                    {...prev,transactionid:event.target.value}
+                ));
+                
+            }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="tid" placeholder='Transaction ID/UTR (Transaction Number)'/>
+            <div className='text-white  text-sm text-start font-bold'>Screenshot of payment completion<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            type="file"
+            onChange={(event)=>{
+                setFile1(event.target.files[0])
+            }}
+            placeholder="jpg"
+            accept=".jpg"
+            /> </div>
+            <div className='text-white  text-sm text-start font-bold'>Upload Institute ID or ID Proof of Contingent Leader<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            type="file"
+            onChange={(event)=>{
+                setFile2(event.target.files[0])
+            }}
+            placeholder="jpg"
+            accept=".jpg"
+            /> </div>
+            <div className='block m-auto text-red-500 text-center'>{error}</div>
             <button disabled={submitdisable} onClick={handle} className='text-white  bg-[#0071C9] w-fit block m-auto p-2 rounded-xl hover:text-white' type="submit">Submit</button>
         </form>
        
         </div>
-        </div></div> : <div className='h-screen text-center p-10  font-[600] text-[20px]'>Congratulations,<br/>Your Team has been Succesfully registered<br/><button className='border-2 text-[15px]  text-center w-[250px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Continue To Payment</button></div> }
+        </div></div> : <div className='h-screen text-center p-10  font-[600] text-[20px]'>Congratulations,<br/>Your Team has been Succesfully registered<br/><a href="/" ><button className='border-2 text-[15px]  text-center w-[250px] m-auto p-2  mt-8 rounded-xl border-[#0071C9] text-[#0071C9] hover:border-white hover:text-white' type="submit">Home</button></a></div> }
        </div>
    </div>
   )
