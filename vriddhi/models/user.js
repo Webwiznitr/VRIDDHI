@@ -9,10 +9,11 @@ const userSchema = new Schema(
         events:{type:Array,default:[],required:true},
         elist:{type:Array,default:[],required:true},
         participants:{type:Number,required:true},
-        coaches:{type:Number,required:true}
-    },
-    {
-        timestamps:true
+        coaches:{type:Number,required:true},
+        url:{type:Array,default:[],required:true},
+        transactionid:{type:String,required:true},
+        
+
     }
 );
 
