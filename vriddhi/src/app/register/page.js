@@ -90,7 +90,7 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
     })
     console.log(data)
       try{
-        await fetch('http://localhost:3000/api/user',{
+        await fetch('http://localhost:8080/api/user',{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
