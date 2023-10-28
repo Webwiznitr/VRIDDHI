@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -17,16 +15,16 @@ module.exports = {
       fontFamily: {
         nidus: ["nidus", "sans-serif"],
         blanka: ["blanka", "sans-serif"],
+        ubuntuCondensed: ["ubuntuCondensed", "sans-serif"],
       },
 
       screens: {
-      
-        'mdy' : {'max': '1023px'},
-        'mdx' : '1024px',
-        'mdt': { 'raw': '(max-height: 760px)' },
-        'mdxx':'1500px',
-        'r':'1135px'
-      }
+        mdy: { max: "1023px" },
+        mdx: "1024px",
+        mdt: { raw: "(max-height: 760px)" },
+        mdxx: "1500px",
+        r: "1135px",
+      },
     },
   },
   plugins: [],

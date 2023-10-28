@@ -1,13 +1,5 @@
 @tailwind base;
 
-@layer base {
-  @font-face {
-    font-family: "nidus";
-    font-weight: 400;
-    src: url("/Fonts/navbarTxt.ttf") format("truetype");
-    font-display: swap;
-  }
-}
 nav {
   background-color: #111a21;
 }

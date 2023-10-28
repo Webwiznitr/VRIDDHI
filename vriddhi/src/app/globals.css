@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "ubuntuCondensed";
+    font-weight: 400;
+    src: url("/Fonts/tournamentPop.ttf") format("truetype");
+    font-display: swap;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "nidus";
+    font-weight: 400;
+    src: url("/Fonts/navbarTxt.ttf") format("truetype");
+    font-display: swap;
+  }
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Pathway+Extreme&family=Poppins:wght@300;500&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Pathway+Extreme&family=Poppins:wght@300;500&family=Roboto&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -29,11 +45,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-#score-card-upcoming{
-  background: linear-gradient(154deg, #001F4E -12.93%, #000 106.32%);
+#score-card-upcoming {
+  background: linear-gradient(154deg, #001f4e -12.93%, #000 106.32%);
 }
-#score-card-completed{
-  background: linear-gradient(154deg, #784F00 -12.93%, #000 106.32%);
+#score-card-completed {
+  background: linear-gradient(154deg, #784f00 -12.93%, #000 106.32%);
 }
 div::-webkit-scrollbar {
   display: none;
@@ -43,6 +59,4 @@ div::-webkit-scrollbar {
 div::-webkit-scrollbar-thumb {
   background: #88888853;
   border-radius: 10px;
-  
 }
-

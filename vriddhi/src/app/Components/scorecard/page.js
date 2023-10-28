@@ -55,7 +55,7 @@ const Score = () => {
       {/* Mobile View */}
       <div className="bg-[rgb(24,24,33)] w-full sm:hidden">
         <div className="w-full flex justify-center flex-shrink-0">
-          <h1 className="text-[24px]">SCORE CARD</h1>
+          <h1 className="text-[24px] font-nidus">SCORE CARD</h1>
         </div>
 
         <div className="w-full flex justify-evenly col-span-2 items-center text-black mt-2">
@@ -1401,7 +1401,7 @@ const Score = () => {
 
       <div className="bg-[rgb(24,24,33)] w-full hidden sm:flex flex-col">
         <div className="w-full flex justify-center flex-shrink-0">
-          <h1 className="text-[38px] md:text-[48px] lg:text-[56px] xl:text-[70.26px] font-normal">
+          <h1 className="text-[38px] md:text-[48px] lg:text-[56px] xl:text-[70.26px] font-normal font-nidus">
             SCORE CARD
           </h1>
         </div>
@@ -1426,8 +1426,8 @@ const Score = () => {
                 }}
                 type="button"
                 className="pc w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2 scale-125"
-              ><div className="p-1 rounded-[25px] bg-[#FFFCFC]">CRICKET</div>
-                
+              >
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">CRICKET</div>
               </button>
 
               <button
@@ -1442,7 +1442,7 @@ const Score = () => {
                 type="button"
                 className=" w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-               <div className="p-1 rounded-[25px] bg-[#FFFCFC]">FOOTBALL</div>
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">FOOTBALL</div>
               </button>
 
               <button
@@ -1457,7 +1457,9 @@ const Score = () => {
                 type="button"
                 className=" w-[70%] h-[50px] rounded-[25px] bg-[#D8DFE1] text-[20px] my-2"
               >
-                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">BASKET BALL</div>
+                <div className="p-1 rounded-[25px] bg-[#FFFCFC]">
+                  BASKET BALL
+                </div>
               </button>
 
               <button
@@ -2164,7 +2166,9 @@ const Score = () => {
                       <div className="text-[12px] mb-2">NIT RKL WON</div>
                     </div>
 
-                    <div className={`w-[75%] h-52 mt-11 rounded-[15px] bg-[#F4F4F4] flex flex-col items-center overflow-hidden  text-black `}>
+                    <div
+                      className={`w-[75%] h-52 mt-11 rounded-[15px] bg-[#F4F4F4] flex flex-col items-center overflow-hidden  text-black `}
+                    >
                       <div className="w-full h-full flex">
                         <div className="w-[66.66%] h-full flex flex-col items-center">
                           <div className="w-full text-black text-center">
