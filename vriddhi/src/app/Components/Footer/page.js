@@ -74,6 +74,7 @@ const Footer = () => {
           <img src={"/all_logo.png"} alt="" className="rounded-lg" />
         </div>
       </footer>
+      <div className="bg-[#0D1318] p-2 text-center">Powered by Team Webwiz💜</div>
     </>
   );
 };
