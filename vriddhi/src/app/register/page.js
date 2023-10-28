@@ -63,7 +63,7 @@ export default function Home() {
             console.error(error);
           };
           
-          
+          console.log(form)
 if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 || !form.contact || !form.Wnumber  || !form.participants || !form.coaches || !form.transactionid  ){
           setError("Fill All Fields Please")
           return ;
