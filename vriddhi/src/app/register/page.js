@@ -90,7 +90,7 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
     })
     console.log(data)
       try{
-        await fetch('https://www.vriddhi.co/api/user',{
+        await fetch('https://vriddhi.co/api/user',{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
