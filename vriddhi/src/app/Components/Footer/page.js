@@ -85,12 +85,12 @@ export const QuickLinks = [
   {
     id: 1,
     name: "About Us",
-    link: "/about",
+    link: "#aboutus",
   },
   {
     id: 2,
     name: "Tournaments",
-    link: "/tournaments",
+    link: "#tournaments",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ export const QuickLinks = [
   {
     id: 4,
     name: "Contact Us",
-    link: "/contact",
+    link: "#contactus",
   },
 ];
 export const support = [

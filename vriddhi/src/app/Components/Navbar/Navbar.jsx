@@ -38,27 +38,29 @@ function Navbar() {
           </span>
         </div>
         <ul
-          className={`${navbar ? "block" : "hidden"} md:flex md:items-center`}
+          className={`${navbar ? "block" : "hidden"} h-[100vh] w-full md:h-auto md:w-auto md:flex md:items-center`}
         >
           {navComponents.map((navComponent) => (
             <li key={navComponent.id}>
-              <Link
+              <div className="w-full my-14 md:my-0 text-center"><Link
                 onClick={() => setNavbar((navbar) => !navbar)}
                 href={`${navComponent.scroll}`}
-                className="text-white text-sm font-normal py-6 px-5 font-nidus hover:text-blue-800"
+                className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-blue-800"
               >
                 {navComponent.title}
-              </Link>
-            </li>
-          ))}
+              </Link></div>
+            </li> 
+            
+          ))} 
+          <div className="md:w-auto w-full flex justify-center ">
 <Link href={"/register"}>
           <button
-            className={`font-nidus text-[#D1713C] text-sm md:text-base mx-2 md:mx-0 px-3 md:px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-1 my-1 mb-2 md:my-0 md:py-2 hover:text-[#f19665] hover:border-[#f19665] ${
+            className={`font-nidus text-center  text-[#D1713C] text-sm md:text-base mx-2 md:mx-0 px-3 md:px-5 border-[1.257px] border-solid border-[#D1713C] rounded-[18.858px] py-1 my-1 mb-2 md:my-0 md:py-2 hover:text-[#f19665] hover:border-[#f19665] ${
               navbar ? "block" : "hidden"
             } md:flex`}
           >
             REGISTER
-          </button></Link>
+          </button></Link></div>
         </ul>
         <a href="https://www.nitrkl.ac.in/" target="blank">
           <Image
