@@ -32,12 +32,12 @@ const About = () => {
             <div className='mb-[4vh] mt-[-5vh]'>
 
               <Image className=' mt-[15vh] mdy:w-[100vw] '
-              src="/Images/VRIDDHILOGO.png"
+              src="/images/VRIDDHI.svg"
               width={500}
               height={400}
               alt='vriddhi'/>
 
-              {/*<h1 className='mt-[3vh] text-2xl mdy:text-[5vw]' style={{fontFamily:'Melvins One Regular, sans-serif'}}>SPORTS FEST</h1>*/}
+              <h1 className='mt-[3vh] text-2xl mdy:text-[5vw]' style={{fontFamily:'Melvins One Regular, sans-serif'}}>SPORTS FEST</h1>    
             
             </div>
 
