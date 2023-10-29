@@ -32,7 +32,7 @@ const About = () => {
             <div className='mb-[4vh] mt-[-5vh]'>
 
               <Image className=' mt-[15vh] mdy:w-[100vw] '
-              src="/images/VRIDDHILOGO.png"
+              src="/Images/VRIDDHILOGO.png"
               width={500}
               height={400}
               alt='vriddhi'/>
