@@ -5,7 +5,7 @@ import TeamData from '../Data/TeamData'
 
 const Team = () => {
   return (
-    <div>
+    <div id='ourteam'>
         <div className=' w-[100%] h-[100%]  bg-[#111A21] text-center relative'>
         <Image className='mix-blend-multiply relative'
         src='/images/Team/bg-3.png'

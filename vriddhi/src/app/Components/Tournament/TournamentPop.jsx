@@ -51,7 +51,7 @@ const Tournament = ({ className, src, tournamentName, rules = [] }) => {
   });
 
   return (
-    <>
+    <div id="tournament">
       <PopupModal
         isOpen={openModal}
         onClose={handleModalClose}
@@ -85,7 +85,7 @@ const Tournament = ({ className, src, tournamentName, rules = [] }) => {
           <Image src={src} alt=""></Image>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

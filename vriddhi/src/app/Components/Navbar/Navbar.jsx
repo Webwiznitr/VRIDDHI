@@ -3,15 +3,15 @@ import Link from "next/link";
 import React, { useState } from "react";
 import "./Navbar.css";
 import Image from "next/image";
-import vriddhiLogo from "public/Images/vriddhiLogo.svg";
+import vriddhiLogo from "public/Images/VRIDDHILOGO.png";
 import NITRLogo from "public/Images/NITRLogo.svg";
 import Hamburger from "hamburger-react";
 const navComponents = [
-  { title: "TOURNAMENT", id: 1 },
-  { title: "GALLERY", id: 2 },
-  { title: "ABOUT US", id: 3 },
-  { title: "OUR TEAM", id: 4 },
-  { title: "CONTACT US", id: 5 },
+  { title: "TOURNAMENT", id: 1 ,scroll:"#tournament"},
+  { title: "GALLERY", id: 2 , scroll:"#container"},
+  { title: "ABOUT US", id: 3,scroll:"#aboutus" },
+  { title: "OUR TEAM", id: 4 ,scroll:"#ourteam"},
+  { title: "CONTACT US", id: 5,scroll:"#contactus" },
 ];
 
 function Navbar() {
@@ -44,7 +44,7 @@ function Navbar() {
             <li key={navComponent.id}>
               <Link
                 onClick={() => setNavbar((navbar) => !navbar)}
-                href={"/"}
+                href={`${navComponent.scroll}`}
                 className="text-white text-sm font-normal py-6 px-5 font-nidus hover:text-blue-800"
               >
                 {navComponent.title}
