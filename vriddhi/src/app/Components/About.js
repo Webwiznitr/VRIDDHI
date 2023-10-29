@@ -38,7 +38,6 @@ const About = () => {
               alt='vriddhi'/>
 
               <h1 className='mt-[3vh] text-2xl mdy:text-[5vw]' style={{fontFamily:'Melvins One Regular, sans-serif'}}>SPORTS FEST</h1>    
-            
             </div>
 
             
