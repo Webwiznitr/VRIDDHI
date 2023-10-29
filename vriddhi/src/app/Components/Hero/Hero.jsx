@@ -6,6 +6,7 @@ import year from "public/Images/2023.svg";
 import HomeMobile from "public/Images/HomepageMobile.svg";
 import mobileLower from "public/Images/MobileLower.svg";
 import mobileUpper from "public/Images/g480.svg";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -21,9 +22,9 @@ function Hero() {
             VRIDDHI
           </h1>
           <Image src={year} alt="year" className="py-11" />
-          <button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-3xl text-[#2E2E2E]">
+          <Link href={"/register"}><button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-3xl text-[#2E2E2E]">
             JOIN US
-          </button>
+          </button></Link>
         </div>
       </main>
       {/* Phone View */}
@@ -55,9 +56,9 @@ function Hero() {
             VRIDDHI
           </h1>
           <Image src={year} alt="year" className="py-11 w-[30%]" />
-          <button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-xl text-[#2E2E2E]">
+          <Link href={"/register"}><button className="font-nidus bg-[#EEBD2F] hover:bg-[#ebcb6d] rounded-[39.979px] px-6 py-3 text-xl text-[#2E2E2E]">
             JOIN US
-          </button>
+          </button></Link>
         </div>
       </main>
     </>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div>
+    <div id="aboutus">
       <div className=' w-[100%] h-[100%]  bg-[#111A21] relative pb-[20vh] mdy:pt-[10vh] '>
         <Image className='mix-blend-multiply absolute'
             src='/images/About/background.png'
@@ -32,12 +32,12 @@ const About = () => {
             <div className='mb-[4vh] mt-[-5vh]'>
 
               <Image className=' mt-[15vh] mdy:w-[100vw] '
-              src="/images/About/VRIDDHI'2022.svg"
+              src="/images/VRIDDHILOGO.png"
               width={500}
               height={400}
               alt='vriddhi'/>
 
-              <h1 className='mt-[3vh] text-2xl mdy:text-[5vw]' style={{fontFamily:'Melvins One Regular, sans-serif'}}>SPORTS FEST</h1>
+              {/*<h1 className='mt-[3vh] text-2xl mdy:text-[5vw]' style={{fontFamily:'Melvins One Regular, sans-serif'}}>SPORTS FEST</h1>*/}
             
             </div>
 
