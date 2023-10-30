@@ -11,8 +11,8 @@ export default function Gallery() {
     return (
         <div id="container" className="  w-full background-color  relative z-10 ">
             <div id="head"
-                className="gallery-top-modified gallery-top flex w-[29rem] h-[7rem] mx-auto flex-col justify-center font-size font-size-1  flex-shrink-0 text-white text-center font-nidus-sans text-4xl font-normal leading-10 uppercase color ">
-                Gallery</div>   
+                className="font-nidus first-letter:gallery-top-modified gallery-top flex w-[29rem] h-[7rem] mx-auto flex-col justify-center text-[24px] font-size font-size-1  flex-shrink-0 text-white text-center font-nidus-sans text-4xl font-normal leading-10 uppercase color ">
+                <div className="text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus">Gallery</div></div>   
             <div id="main" className="w-[92%] mx-auto flex flex-col items-center justify-center h-[38rem] z-20 relative">
                 <div id="top" className="w-full  h-[12.6875rem] up-675 up-375 up-452  flex-shrink-0 linear z-40 relative" ></div>
                 <div id="chat-container" className="w-full  mt-[-9rem] z-30 relative  mb-[-11rem] height overflow-y-auto custom-scroll-pulse sc-bg ">
