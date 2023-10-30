@@ -18,7 +18,7 @@ const Tally = () => {
     
       return (
         <div className="min-w-full bg-[rgb(24,24,33)]">
-        <h1 className="text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8">MEDAL TABLE</h1>
+        <h1 className="text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus">MEDAL TABLE</h1>
         <table className="w-3/4 m-auto font-sans sm:text-sm lg:text-base text-xs rounded-[15px] uppercase bg-gradient-to-br from-[rgb(0,31,78)] to-[rgb(0,5,13)]">
           <thead>
             <tr>

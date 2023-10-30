@@ -17,6 +17,7 @@ const TeamCard = ({data}) => {
                 alt='img'
                 />
             </div>
+            
             )
            
         })}

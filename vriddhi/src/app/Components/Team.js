@@ -20,7 +20,7 @@ const Team = () => {
             alt="background"
         />
 
-        <h1 className='text-white md:text-[70px] pt-[13vh] text-[35px]' style={{fontFamily:'Nidus sans, sans-serif'}}>OUR TEAM</h1>
+        <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus' >OUR TEAM</h1>
 
 
 

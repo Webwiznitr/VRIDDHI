@@ -5,7 +5,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <section id="contactus" className="min-h-screen bg-black flex flex-col text-white justify-center items-center overflow-hidden ">
-      <h1 className="text-5xl uppercase mb-20 ">Contact US</h1>
+      <h1 className="text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus ">Contact US</h1>
       <div
         className="flex flex-col md:flex-row justify-center  items-center gap-11
     md:gap-32"
