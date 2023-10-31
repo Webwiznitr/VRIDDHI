@@ -1,35 +1,43 @@
 "use client";
 import React, { useState } from "react";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import Navbar from "./Components/Navbar/Navbar";
-import connectMongoDB from "../../libs/mongodb";
-import Footer from "./Components/Footer/page";
-import Head from "next/head";
+import Hero from "./Components/Hero/Hero";
+import Score from "./Components/scorecard/score";
+import Tally from "./Components/Tally/tally";
+import Contact from "./Components/Contact/page";
+import Tournaments from "../tournaments/tournaments";
+import About from "./components/About";
+import Team from "./components/Team";
+import Gallery from "./Components/Gallery/gallery";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Vriddhi 2023",
-  description: "Vriddhi 2023",
-};
-
-export default function RootLayout({ children }) {
+export default function Home() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
   }, 3000);
   return (
-    <html lang="en">
-      <Head>
-        <link rel="icon" href="../favicon.ico" />
-      </Head>
-
-      {loading ? <></> : <Navbar />}
-
-      <body className={inter.className}>{children}</body>
-
-      {loading ? <></> : <Footer />}
-    </html>
+    <>
+      {loading ? (
+        <>
+          <div className="w-screen h-screen flex justify-center items-center bg-[#172027]">
+            <img
+              alt="loader"
+              className="h-fit w-fit"
+              src="https://res.cloudinary.com/dgy8ybeoy/image/upload/v1666186569/0_U2RiSXJx8U9K4thZ_vsmfww.gif"
+            />
+          </div>
+        </>
+      ) : (
+        <div className="overflow-hidden">
+          <Hero />
+          <Tournaments />
+          <Score />
+          <Tally />
+          <Gallery />
+          <About />
+          <Team />
+          <Contact />
+        </div>
+      )}
+    </>
   );
 }
