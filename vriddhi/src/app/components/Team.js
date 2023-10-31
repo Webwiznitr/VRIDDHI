@@ -25,7 +25,7 @@ const Team = () => {
 
 
 
-        <div className='grid md:grid-cols-3 grid-row-auto md:gap-x-[1vw] md:gap-y-[5vh] w-[100%] place-items-center px-[5vw]  py-[10vh] text-center grid-cols-2 gap-y-[10vh] gap-x-[0.5vw] '>
+        <div className='grid md:grid-cols-2 grid-row-auto md:gap-x-[1vw] md:gap-y-[5vh] w-[100%] place-items-center px-[5vw]  py-[10vh] text-center grid-cols-2 gap-y-[10vh] gap-x-[0.5vw] '>
         <TeamCard data ={TeamData}/>
 
         </div>
