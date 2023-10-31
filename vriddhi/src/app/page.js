@@ -1,32 +1,35 @@
-
-
-
-import React from 'react';
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
+import "./globals.css";
+import { Inter } from "next/font/google";
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import Score from "./Components/scorecard/score";
-import Tally from "./Components/Tally/tally";
-import Contact from "./Components/Contact/page"
-import Tournaments from '../tournaments/tournaments'
-import About from "./components/About"
-import Team from './components/Team'
-import Gallery from './Components/Gallery/gallery';
+import connectMongoDB from "../../libs/mongodb";
+import Footer from "./Components/Footer/page";
+import Head from "next/head";
 
-export default function Home() {
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Vriddhi 2023",
+  description: "Vriddhi 2023",
+};
+
+export default function RootLayout({ children }) {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
   return (
-    <div className='overflow-hidden'>
-      <Hero/>
-      <Tournaments/> 
-      <Score/>
-      <Tally/>
-      <Gallery/>
-      <About/>
-      <Team/>
-      <Contact/>
-    </div>
+    <html lang="en">
+      <Head>
+        <link rel="icon" href="../favicon.ico" />
+      </Head>
+
+      {loading ? <></> : <Navbar />}
+
+      <body className={inter.className}>{children}</body>
+
+      {loading ? <></> : <Footer />}
+    </html>
   );
-
-
 }
-
