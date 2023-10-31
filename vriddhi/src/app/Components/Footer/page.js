@@ -70,11 +70,11 @@ export const QuickLinks = [
   {
     id: 1,
     name: "About Us",
-    link: "#aboutus",
+    link: "https://www.vriddhi.co/#aboutus",
   },{
     id: 2,
     name: "Tournaments",
-    link: "#tournament",
+    link: "https://www.vriddhi.co/#tournament",
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ export const QuickLinks = [
   {
     id: 4,
     name: "Contact Us",
-    link: "#contactus",
+    link: "https://www.vriddhi.co/#contactus",
   },
 ];
 export const support = [
