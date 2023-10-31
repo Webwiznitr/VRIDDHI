@@ -7,14 +7,14 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import CloseIcon from "@mui/icons-material/Close";
 
 const Header = ({ message }) => {
-  return <h2 className="text-xl md:text-3xl py-2">{message}</h2>;
+  return <h2 className="text-xl md:text-3xl py-2 text-white">{message}</h2>;
 };
 
 const List = ({ message }) => {
   return (
-    <ul className="list-disc pl-[14px] ml-3">
+    <ul className="list-disc pl-[14px] ml-3 text-white">
       {message.map((msg) => (
-        <li key={msg} className="py-2 text-base md:text-lg">
+        <li key={msg} className="py-2 text-base md:text-lg text-white">
           {msg}
         </li>
       ))}
@@ -51,7 +51,7 @@ const Tournament = ({ className, src, tournamentName, rules = [] }) => {
   });
 
   return (
-    <>
+    <div id="tournament">
       <PopupModal
         isOpen={openModal}
         onClose={handleModalClose}
@@ -60,7 +60,7 @@ const Tournament = ({ className, src, tournamentName, rules = [] }) => {
         <CloseIcon
           onClick={() => handleOnClick()}
           fontSize="large"
-          className="float-right cursor-pointer pl-2 md:pl-0"
+          className="float-right cursor-pointer pl-2 md:pl-0 text-white"
         />
         <h1 className="text-[#fff] text-2xl md:text-5xl text-center pb-4">
           RULE AND REGULATIONS
@@ -85,7 +85,7 @@ const Tournament = ({ className, src, tournamentName, rules = [] }) => {
           <Image src={src} alt=""></Image>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
