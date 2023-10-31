@@ -3,49 +3,49 @@ const TeamData = [
 
     {
      id:1,
-     name: "John Doe",
-     image: "/images/Team/1.jpg",
-     info: "member",
+     name: "Uday Kumar",
+     image: "/images/Team/5.jpg",
+     info: "Convener",
 
     },
 
     {
         id:2,
-        name: "John Doe",
-        image: "/images/Team/2.jpg",
-        info: "member",
+        name: "Saheel Mohapatra",
+        image: "/images/Team/6.jpg",
+        info: "Convener",
    
        },
    
     {
         id:3,
-        name: "John Doe",
+        name: "Amanjeet Pradhan",
         image: "/images/Team/3.jpg",
-        info: "member",
+        info: "Core Team",
    
     },
    
     {
         id:4,
-        name: "John Doe",
+        name: "Bhaswoti Sahoo",
         image: "/images/Team/4.jpg",
-        info: "member",
+        info: "Core Team",
    
     },
    
     {
         id:5,
-        name: "John Doe",
-        image: "/images/Team/5.jpg",
-        info: "member",
+        name: "Pritam Prakash",
+        image: "/images/Team/1.jpg",
+        info: "Core Team",
    
     },
    
     {
         id:6,
-        name: "John Doe",
-        image: "/images/Team/6.jpg",
-        info: "member",
+        name: "Aryaman Bala",
+        image: "/images/Team/2.jpg",
+        info: "Core Team",
    
     },
    
