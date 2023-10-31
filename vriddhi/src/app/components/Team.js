@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import TeamCard from './TeamCard'
@@ -33,10 +34,6 @@ const Team = () => {
 
         </div>
 
-        
-
-
-        
       
     </div>
   )
