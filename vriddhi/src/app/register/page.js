@@ -370,7 +370,7 @@ An Excel sheet containing all the details of the students to their corresponding
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="name" placeholder='Whatsapp Number (Contingent Leader)' />
             <div className='font-bold'>Confirmed Events</div>
             <div className='grid grid-cols-2 text-sm'>
-            <div>
+            <div>Cricket(Men)   
             <input onChange={()=>{
                 const index=form.events.indexOf("Cricket(Men)");
                 if (index!==-1){
@@ -379,11 +379,11 @@ An Excel sheet containing all the details of the students to their corresponding
                     setForm((prev)=>(
                     {...prev,events:[...form.events,"Cricket(Men)"]}
                 ));
-                }
                 
+                }
             }} type="checkbox" id="Cricket(Men)" />
-            <label className='p-2' htmlFor="Cricket(Men)">Cricket(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Cricket(Men)"></label></div>
+            <div>Football(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Football(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -394,8 +394,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 }
                 
             }} type="checkbox" id="Football(Men)"  />
-            <label className='p-2' htmlFor="Football(Men)">Football(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Football(Men)"></label></div>
+            <div>Basketball(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Basketball(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -405,8 +405,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Basketball(Men)"  />
-            <label className='p-2' htmlFor="Basketball(Men)">Basketball(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Basketball(Men)"></label></div>
+            <div>Volleyball(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Volleyball(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -417,8 +417,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 }
                 
             }} type="checkbox" id="Volleyball(Men)" />
-            <label className='p-2' htmlFor="Volleyball(Men)">Volleyball(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Volleyball(Men)"></label></div>
+            <div>Badminton(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Badminton(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -428,8 +428,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Badminton(Men)"  />
-            <label className='p-2' htmlFor="Badminton(Men)">Badminton(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Badminton(Men)"></label></div>
+            <div>Table-Tennis(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Table-Tennis(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -439,8 +439,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Table-Tennis(Men)" />
-            <label className='p-2' htmlFor="Table-Tennis(Men)">Table-Tennis(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Table-Tennis(Men)"></label></div>
+            <div>Kabbadi(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Kabbadi(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -450,8 +450,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Kabbadi(Men)" />
-            <label className='p-2' htmlFor="Kabbadi(Men)">Kabbadi(Men)</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Kabbadi(Men)"></label></div>
+            <div>Chess<input onChange={()=>{
                 const index=form.events.indexOf("Chess");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -461,8 +461,8 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Chess" />
-            <label className='p-2' htmlFor="Chess">Chess</label></div>
-            <div><input onChange={()=>{
+            <label className='' htmlFor="Chess"></label></div>
+            <div>Badminton(Women)<input onChange={()=>{
                 const index=form.events.indexOf("Badminton(Women)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -472,7 +472,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 }
             }} type="checkbox" id="Badminton(Women)"  />
-            <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
+            <label className='' htmlFor="Badminton(Women)"></label></div>
 
             </div>
             <div className='text-white  text-sm text-start'><span className=' font-bold underline underline-offset-4'>Upload Final Registration List</span> <br/>
