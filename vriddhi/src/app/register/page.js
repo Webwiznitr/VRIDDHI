@@ -294,7 +294,7 @@ An Excel sheet containing all the details of the students to their corresponding
             </div></div>
             </div>
             <div className='bg-gradient-to-br from-[rgb(0,31,78)] to-[rgb(0,5,13)] rounded-lg w-[750px] pb-4 mb-4'>
-            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
+            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1200 + 100 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
            
             <div className='m-auto w-fit p-10'>
             <div>Transaction ID/UTR<br/><span className='text-sm'>Transaction Number recieved upon completion of payment.</span></div>
@@ -509,7 +509,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="name" placeholder='Total Number of Coaches'/>
             <div className='text-white font-bold  text-lg text-center'>Payment</div>
-            <div className=' text-center  '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><ul className='font-semibold text-center'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg text-center font-bold text-red-400 '>Note : Any Sort of Misconduct is highly punishable.</span>
+            <div className=' text-center  '>You will have to pay a registration fee of Rs.1200 + 100 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><ul className='font-semibold text-center'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg text-center font-bold text-red-400 '>Note : Any Sort of Misconduct is highly punishable.</span>
             <hr/>
             <input  onChange={(event)=>{
                 setForm((prev)=>(
