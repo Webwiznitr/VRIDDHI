@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="tel:9692899851" className="font-bold md:text-left text-center w-full">
             Saheel Mohapatra:-9692899851
           </a>
-          <div className="flex items-start justify-center w-full gap-3">
+          <div className="flex items-start justify-center md:justify-start w-full gap-3">
             <Link href="https://www.linkedin.com/company/vriddhi-nitr/">
               <img className="h-5 w-5 opacity-40" src="/link.png" alt="" />
             </Link>
