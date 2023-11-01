@@ -136,6 +136,19 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }} type="checkbox" id="Cricket(Men)" />
             <label className='p-2' htmlFor="Cricket(Men)">Cricket(Men)</label></div>
+            <div>
+            <input onChange={()=>{
+                const index=form.events.indexOf("Cricket(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Cricket(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Cricket(Women)" />
+            <label className='p-2' htmlFor="Cricket(Women)">Cricket(Women)</label></div>
             <div><input onChange={()=>{
                 const index=form.events.indexOf("Football(Men)");
                 if (index!==-1){
@@ -148,6 +161,18 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }} type="checkbox" id="Football(Men)"  />
             <label className='p-2' htmlFor="Football(Men)">Football(Men)</label></div>
+            <div><input onChange={()=>{
+                const index=form.events.indexOf("Football(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Football(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Football(Women)"  />
+            <label className='p-2' htmlFor="Football(Women)">Football(Women)</label></div>
             <div><input onChange={()=>{
                 const index=form.events.indexOf("Basketball(Men)");
                 if (index!==-1){
@@ -162,6 +187,19 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
             }} type="checkbox" id="Basketball(Men)"  />
             <label className='p-2' htmlFor="Basketball(Men)">Basketball(Men)</label></div>
             <div><input onChange={()=>{
+                const index=form.events.indexOf("Basketball(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Basketball(Women)"]}
+                ));
+                }
+                
+                
+            }} type="checkbox" id="Basketball(Women)"  />
+            <label className='p-2' htmlFor="Basketball(Women)">Basketball(Women)</label></div>
+            <div><input onChange={()=>{
                 const index=form.events.indexOf("Volleyball(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -174,6 +212,18 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
             }} type="checkbox" id="Volleyball(Men)" />
             <label className='p-2' htmlFor="Volleyball(Men)">Volleyball(Men)</label></div>
             <div><input onChange={()=>{
+                const index=form.events.indexOf("Volleyball(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Volleyball(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Volleyball(Women)" />
+            <label className='p-2' htmlFor="Volleyball(Women)">Volleyball(Women)</label></div>
+            <div><input onChange={()=>{
                 const index=form.events.indexOf("Badminton(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -185,6 +235,19 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }} type="checkbox" id="Badminton(Men)"  />
             <label className='p-2' htmlFor="Badminton(Men)">Badminton(Men)</label></div>
+
+            <div><input onChange={()=>{
+                const index=form.events.indexOf("Badminton(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Badminton(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Badminton(Women)"  />
+            <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
             <div><input onChange={()=>{
                 const index=form.events.indexOf("Table-Tennis(Men)");
                 if (index!==-1){
@@ -198,6 +261,18 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
             }} type="checkbox" id="Table-Tennis(Men)" />
             <label className='p-2' htmlFor="Table-Tennis(Men)">Table-Tennis(Men)</label></div>
             <div><input onChange={()=>{
+                const index=form.events.indexOf("Table-Tennis(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Table-Tennis(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Table-Tennis(Women)" />
+            <label className='p-2' htmlFor="Table-Tennis(Women)">Table-Tennis(Women)</label></div>
+            <div><input onChange={()=>{
                 const index=form.events.indexOf("Kabbadi(Men)");
                 if (index!==-1){
                     form.events.splice(index,1)
@@ -209,6 +284,19 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }} type="checkbox" id="Kabbadi(Men)" />
             <label className='p-2' htmlFor="Kabbadi(Men)">Kabbadi(Men)</label></div>
+
+            <div><input onChange={()=>{
+                const index=form.events.indexOf("Kabbadi(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Kabbadi(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Kabbadi(Women)" />
+            <label className='p-2' htmlFor="Kabbadi(Women)">Kabbadi(Women)</label></div>
             <div><input onChange={()=>{
                 const index=form.events.indexOf("Chess");
                 if (index!==-1){
@@ -221,21 +309,10 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }} type="checkbox" id="Chess" />
             <label className='p-2' htmlFor="Chess">Chess</label></div>
-            <div><input onChange={()=>{
-                const index=form.events.indexOf("Badminton(Women)");
-                if (index!==-1){
-                    form.events.splice(index,1)
-                } else {
-                    setForm((prev)=>(
-                    {...prev,events:[...form.events,"Badminton(Women)"]}
-                ));
-                }
-                
-            }} type="checkbox" id="Badminton(Women)"  />
-            <label className='p-2' htmlFor="Badminton(Women)">Badminton(Women)</label></div>
+            
 
             </div>
-            <div>Total Number of Participants</div>
+            <div className='-mt-10'>Total Number of Participants</div>
             <input  onChange={(event)=>{
                 setForm((prev)=>(
                     {...prev,participants:event.target.value}
@@ -264,8 +341,8 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }}  autoComplete="off" className='outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="wnumber"/>
             <div className='text-white w-[350px] text-start'><span className='underline underline-offset-4'>Upload Final Registration List</span> <br/>
-An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample</span> </a></div>
-<input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample</span> </a> Supported Formats: .xlsx</div>
+<input className=" mt-2 h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
                 const file = event.target.files[0];
@@ -284,7 +361,7 @@ An Excel sheet containing all the details of the students to their corresponding
             placeholder="Excel"
             accept=".xlsx"
             /> 
-            <div>Total Number of Coaches</div>
+            <div className=''>Total Number of Coaches</div>
             <input  onChange={(event)=>{
                 setForm((prev)=>(
                     {...prev,coaches:event.target.value}
@@ -294,7 +371,7 @@ An Excel sheet containing all the details of the students to their corresponding
             </div></div>
             </div>
             <div className='bg-gradient-to-br from-[rgb(0,31,78)] to-[rgb(0,5,13)] rounded-lg w-[750px] pb-4 mb-4'>
-            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1200 + 100(caution money) per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
+            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
            
             <div className='m-auto w-fit p-10'>
             <div>Transaction ID/UTR<br/><span className='text-sm'>Transaction Number recieved upon completion of payment.</span></div>
@@ -382,7 +459,20 @@ An Excel sheet containing all the details of the students to their corresponding
                 
                 }
             }} type="checkbox" id="Cricket(Men)" />
-            <label className='' htmlFor="Cricket(Men)"></label></div>
+            <label className='' htmlFor="Cricket(Women)"></label></div>
+            <div>Cricket(Women)   
+            <input onChange={()=>{
+                const index=form.events.indexOf("Cricket(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Cricket(Women)"]}
+                ));
+                
+                }
+            }} type="checkbox" id="Cricket(Women)" />
+            <label className='' htmlFor="Cricket(Women)"></label></div>
             <div>Football(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Football(Men)");
                 if (index!==-1){
@@ -395,6 +485,19 @@ An Excel sheet containing all the details of the students to their corresponding
                 
             }} type="checkbox" id="Football(Men)"  />
             <label className='' htmlFor="Football(Men)"></label></div>
+
+            <div>Football(Women)<input onChange={()=>{
+                const index=form.events.indexOf("Football(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Football(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Football(Women)"  />
+            <label className='' htmlFor="Football(Women)"></label></div>
             <div>Basketball(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Basketball(Men)");
                 if (index!==-1){
@@ -406,6 +509,18 @@ An Excel sheet containing all the details of the students to their corresponding
                 }
             }} type="checkbox" id="Basketball(Men)"  />
             <label className='' htmlFor="Basketball(Men)"></label></div>
+
+            <div>Basketball(Women)<input onChange={()=>{
+                const index=form.events.indexOf("Basketball(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Basketball(Women)"]}
+                ));
+                }
+            }} type="checkbox" id="Basketball(Women)"  />
+            <label className='' htmlFor="Basketball(Women)"></label></div>
             <div>Volleyball(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Volleyball(Men)");
                 if (index!==-1){
@@ -418,6 +533,19 @@ An Excel sheet containing all the details of the students to their corresponding
                 
             }} type="checkbox" id="Volleyball(Men)" />
             <label className='' htmlFor="Volleyball(Men)"></label></div>
+            
+            <div>Volleyball(Women)<input onChange={()=>{
+                const index=form.events.indexOf("Volleyball(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Volleyball(Women)"]}
+                ));
+                }
+                
+            }} type="checkbox" id="Volleyball(Women)" />
+            <label className='' htmlFor="Volleyball(Women)"></label></div>
             <div>Badminton(Men)<input onChange={()=>{
                 const index=form.events.indexOf("Badminton(Men)");
                 if (index!==-1){
@@ -429,39 +557,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 }
             }} type="checkbox" id="Badminton(Men)"  />
             <label className='' htmlFor="Badminton(Men)"></label></div>
-            <div>Table-Tennis(Men)<input onChange={()=>{
-                const index=form.events.indexOf("Table-Tennis(Men)");
-                if (index!==-1){
-                    form.events.splice(index,1)
-                } else {
-                    setForm((prev)=>(
-                    {...prev,events:[...form.events,"Table-Tennis(Men)"]}
-                ));
-                }
-            }} type="checkbox" id="Table-Tennis(Men)" />
-            <label className='' htmlFor="Table-Tennis(Men)"></label></div>
-            <div>Kabbadi(Men)<input onChange={()=>{
-                const index=form.events.indexOf("Kabbadi(Men)");
-                if (index!==-1){
-                    form.events.splice(index,1)
-                } else {
-                    setForm((prev)=>(
-                    {...prev,events:[...form.events,"Kabbadi(Men)"]}
-                ));
-                }
-            }} type="checkbox" id="Kabbadi(Men)" />
-            <label className='' htmlFor="Kabbadi(Men)"></label></div>
-            <div>Chess<input onChange={()=>{
-                const index=form.events.indexOf("Chess");
-                if (index!==-1){
-                    form.events.splice(index,1)
-                } else {
-                    setForm((prev)=>(
-                    {...prev,events:[...form.events,"Chess"]}
-                ));
-                }
-            }} type="checkbox" id="Chess" />
-            <label className='' htmlFor="Chess"></label></div>
+
             <div>Badminton(Women)<input onChange={()=>{
                 const index=form.events.indexOf("Badminton(Women)");
                 if (index!==-1){
@@ -473,6 +569,64 @@ An Excel sheet containing all the details of the students to their corresponding
                 }
             }} type="checkbox" id="Badminton(Women)"  />
             <label className='' htmlFor="Badminton(Women)"></label></div>
+            <div>Table-Tennis(Men)<input onChange={()=>{
+                const index=form.events.indexOf("Table-Tennis(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Table-Tennis(Men)"]}
+                ));
+                }
+            }} type="checkbox" id="Table-Tennis(Men)" />
+            <label className='' htmlFor="Table-Tennis(Men)"></label></div>
+
+            <div>Table-Tennis(Women)<input onChange={()=>{
+                const index=form.events.indexOf("Table-Tennis(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Table-Tennis(Women)"]}
+                ));
+                }
+            }} type="checkbox" id="Table-Tennis(Women)" />
+            <label className='' htmlFor="Table-Tennis(Women)"></label></div>
+            <div>Kabbadi(Men)<input onChange={()=>{
+                const index=form.events.indexOf("Kabbadi(Men)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Kabbadi(Men)"]}
+                ));
+                }
+            }} type="checkbox" id="Kabbadi(Men)" />
+            <label className='' htmlFor="Kabbadi(Men)"></label></div>
+
+            <div>Kabbadi(Men)<input onChange={()=>{
+                const index=form.events.indexOf("Kabbadi(Women)");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Kabbadi(Women)"]}
+                ));
+                }
+            }} type="checkbox" id="Kabbadi(Women)" />
+            <label className='' htmlFor="Kabbadi(Women)"></label></div>
+            <div>Chess<input onChange={()=>{
+                const index=form.events.indexOf("Chess");
+                if (index!==-1){
+                    form.events.splice(index,1)
+                } else {
+                    setForm((prev)=>(
+                    {...prev,events:[...form.events,"Chess"]}
+                ));
+                }
+            }} type="checkbox" id="Chess" />
+            <label className='' htmlFor="Chess"></label></div>
+            
 
             </div>
             <div className='text-white  text-sm text-start'><span className=' font-bold underline underline-offset-4'>Upload Final Registration List</span> <br/>
