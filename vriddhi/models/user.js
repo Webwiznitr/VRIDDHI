@@ -16,6 +16,8 @@ const userSchema = new Schema(
        /* transactionid:{type:String,required:true},*/
         
 
+    },{
+        timestamps:true
     }
 );
 
