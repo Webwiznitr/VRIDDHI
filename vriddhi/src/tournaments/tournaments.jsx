@@ -100,6 +100,12 @@ export default function Footer() {
               rules={tournamentRules.badminton}
             />
           </div>
+          <Tournament
+            className="kabaddi"
+            src={badminton}
+            tournamentName={"KABADDI"}
+            rules={tournamentRules.kabaddi}
+          />
         </div>
         <div className="rightlines">
           <Image
@@ -111,6 +117,11 @@ export default function Footer() {
             src={rightmobile}
             alt="rightmoblie2"
             className="rightline2"
+          ></Image>
+          <Image
+            src={rightmobile}
+            alt="rightmoblie3"
+            className="rightline3"
           ></Image>
           <Image
             src={rightmobile}
