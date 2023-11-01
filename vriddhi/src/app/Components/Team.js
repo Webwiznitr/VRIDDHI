@@ -21,7 +21,7 @@ const Team = () => {
             alt="background"
         />
 
-        <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-5 font-nidus' >OUR TEAM</h1>
+        <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-5 font-nidus text-white ' >OUR TEAM</h1>
 
 
 
