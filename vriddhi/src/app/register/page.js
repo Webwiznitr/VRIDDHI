@@ -341,7 +341,7 @@ if ( !form.email || !form.name || form.events.length==0 || form.elist.length==0 
                 
             }}  autoComplete="off" className='outline-none rounded h-[35px] w-[350px] p-2 mb-4 bg-slate-600' type="text" name="wnumber"/>
             <div className='text-white w-[350px] text-start'><span className='underline underline-offset-4'>Upload Final Registration List</span> <br/>
-An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample</span> </a> Supported Formats: .xlsx</div>
+An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample</span> </a> Supported Formats: .xslx</div>
 <input className=" mt-2 h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
@@ -371,7 +371,7 @@ An Excel sheet containing all the details of the students to their corresponding
             </div></div>
             </div>
             <div className='bg-gradient-to-br from-[rgb(0,31,78)] to-[rgb(0,5,13)] rounded-lg w-[750px] pb-4 mb-4'>
-            <div className='text-center text-2xl h-[300px] p-2 '>Payment<br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
+            <div className='text-center text-2xl h-[300px] p-2 '><br/>  <b>Payment</b><br/><br/><div className='text-lg text-center '>You will have to pay a registration fee of Rs.1000 per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><br/><ul className='text-lg font-semibold'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg font-bold text-red-400'>Note : Any Sort of Misconduct is highly punishable.</span><br/></div>
            
             <div className='m-auto w-fit p-10'>
             <div>Transaction ID/UTR<br/><span className='text-sm'>Transaction Number recieved upon completion of payment.</span></div>
@@ -381,7 +381,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 
             }}  autoComplete="off" className=' outline-none rounded h-[35px] w-[400px] p-2 mb-4 bg-slate-600' type="text" name="t-id"/>
-            <div>Screenshot of Payment Completion</div>
+            <div>Screenshot of Payment Completion<br/>Supported Formats: .jpeg/.jpg</div>
             <input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
@@ -389,7 +389,7 @@ An Excel sheet containing all the details of the students to their corresponding
             }}
             placeholder="jpg"
             accept=".jpg"/>
-            <div>Upload Institute ID or ID Proof of Contingent Leader</div>
+            <div>Upload Institute ID or ID Proof of Contingent Leader <br/>Supported Formats: .jpeg/.jpg</div>
             <input className=" h-fit mb-4 block w-fit text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
@@ -630,7 +630,7 @@ An Excel sheet containing all the details of the students to their corresponding
 
             </div>
             <div className='text-white  text-sm text-start'><span className=' font-bold underline underline-offset-4'>Upload Final Registration List</span> <br/>
-An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample </span> </a><input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+An Excel sheet containing all the details of the students to their corresponding teams. (The sheet must contain the names of all the participants under their corresponding interested sport. As shown in the Excel sheet) <a href='https://docs.google.com/spreadsheets/d/1GTF69ejITV1VdGLCPXQTcwhm2LmkkRfn/edit#gid=992052622'> <span className='text-[#0071C9]'>Sample </span>  <br/>Supported Formats: .xslx</a><input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
                 const file = event.target.files[0];
@@ -662,7 +662,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="name" placeholder='Total Number of Coaches'/>
-            <div className='text-white font-bold  text-lg text-center'>Payment</div>
+            <div className='text-white  font-bold  text-lg text-center'>Payment</div>
             <div className=' text-center  '>You will have to pay a registration fee of Rs.1200 + 100(caution money) per Head to the below provided bank account details. In case of any discrepancies contact <span className=' font-bold'>6370165043 </span> at the earliest.</div><ul className='font-semibold text-center'><li>Account Number : 37377186107</li><li>Account Holders Name : STUDENT ACTIVITY CENTER - NIT ROURKELA</li><li>IFSC Code : SBIN0002109</li><li>Branch : NIT CAMPUS ROURKELA</li></ul><span className='text-lg text-center font-bold text-red-400 '>Note : Any Sort of Misconduct is highly punishable.</span>
             <hr/>
             <input  onChange={(event)=>{
@@ -671,7 +671,7 @@ An Excel sheet containing all the details of the students to their corresponding
                 ));
                 
             }}  autoComplete="off" className=' text-white placeholder:text-xs  outline-none  rounded h-8 p-2 bg-slate-600' type="text" name="tid" placeholder='Transaction ID/UTR (Transaction Number)'/>
-            <div className='text-white  text-sm text-start font-bold'>Screenshot of payment completion<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            <div className='text-white  text-sm text-start font-bold'>Screenshot of payment completion <br/>Supported Formats: .jpeg/.jpg<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
                 setFile1(event.target.files[0])
@@ -679,7 +679,7 @@ An Excel sheet containing all the details of the students to their corresponding
             placeholder="jpg"
             accept=".jpg"
             /> </div>
-            <div className='text-white  text-sm text-start font-bold'>Upload Institute ID or ID Proof of Contingent Leader<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
+            <div className='text-white  text-sm text-start font-bold'>Upload Institute ID or ID Proof of Contingent Leader <br/>Supported Formats: .jpeg/.jpg<input className="pl-0 pt-2 block w-full text-white text-sm file:mr-4 file:px-4 file:py-2 file:text-sm file:border-0 file:rounded-full file:font-semibold file:text-[#0071C9] file:bg-white hover:file:bg-blue-100 hover:file:cursor-pointer" 
             type="file"
             onChange={(event)=>{
                 setFile2(event.target.files[0])
