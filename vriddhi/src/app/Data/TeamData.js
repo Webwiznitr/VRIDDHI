@@ -16,6 +16,38 @@ const TeamData = [
         info: "Convener",
    
        },
+
+       {
+        id:3,
+        name: "Amanjeet Pradhan",
+        image: "/images/Team/3.jpg",
+        info: "Core Team",
+
+    },
+
+    {
+        id:4,
+        name: "Bhaswoti Sahoo",
+        image: "/images/Team/4.jpg",
+        info: "Core Team",
+
+    },
+
+    {
+        id:5,
+        name: "Pritam Prakash",
+        image: "/images/Team/1.jpg",
+        info: "Core Team",
+
+    },
+
+    {
+        id:6,
+        name: "Aryaman Bala",
+        image: "/images/Team/2.jpg",
+        info: "Core Team",
+
+    },
    
    
    

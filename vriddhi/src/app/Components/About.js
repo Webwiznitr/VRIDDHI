@@ -19,8 +19,8 @@ const About = () => {
             alt="background"
         />
         
-        <div className='flex justify-center pt-[8vh]' >
-          <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus'>ABOUT US</h1>
+        <div className='flex justify-center pt-[8vh] text-white' >
+          <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus text-white'>ABOUT US</h1>
         </div>
 
         

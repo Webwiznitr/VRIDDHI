@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import TeamCard from './TeamCard'
@@ -20,12 +21,12 @@ const Team = () => {
             alt="background"
         />
 
-        <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-8 font-nidus' >OUR TEAM</h1>
+        <h1 className='text-center sm:text-4xl md:text-5xl lg:text-6xl text-3xl py-5 font-nidus text-white ' >OUR TEAM</h1>
 
 
 
 
-        <div className='grid md:grid-cols-2 grid-row-auto md:gap-x-[1vw] md:gap-y-[5vh] w-[100%] place-items-center px-[5vw]  py-[10vh] text-center grid-cols-2 gap-y-[10vh] gap-x-[0.5vw] '>
+        <div className='grid grid-cols-1 grid-row-auto md:gap-x-[1vw] md:gap-y-[15vh] w-[100%] place-items-center px-[5vw]  py-[10vh] text-center md:grid-cols-2  gap-y-[10vh] gap-x-[0.5vw] '>
         <TeamCard data ={TeamData}/>
 
         </div>
@@ -33,10 +34,6 @@ const Team = () => {
 
         </div>
 
-        
-
-
-        
       
     </div>
   )

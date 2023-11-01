@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -7,11 +8,11 @@ import vriddhiLogo from "public/Images/VRIDDHILOGO.png";
 import NITRLogo from "public/Images/NITRLogo.svg";
 import Hamburger from "hamburger-react";
 const navComponents = [
-  { title: "TOURNAMENT", id: 1 ,scroll:"https://www.vriddhi.co/#tournament"},
-  { title: "GALLERY", id: 2 , scroll:"https://www.vriddhi.co/#container"},
-  { title: "ABOUT US", id: 3,scroll:"https://www.vriddhi.co/#aboutus" },
-  { title: "OUR TEAM", id: 4 ,scroll:"https://www.vriddhi.co/#ourteam"},
-  { title: "CONTACT US", id: 5,scroll:"https://www.vriddhi.co/#contactus" },
+  { title: "TOURNAMENT", id: 1 ,scroll:"#tournament"},
+  { title: "GALLERY", id: 2 , scroll:"#container"},
+  { title: "ABOUT US", id: 3,scroll:"#aboutus" },
+  { title: "OUR TEAM", id: 4 ,scroll:"#ourteam"},
+  { title: "CONTACT US", id: 5,scroll:"#contactus" },
 ];
 
 function Navbar() {
@@ -44,7 +45,7 @@ function Navbar() {
             <li key={navComponent.id}>
               <div className="w-full my-14 md:my-0 text-center"><Link
                 onClick={() => setNavbar((navbar) => !navbar)}
-                href={navComponent.scroll}
+                href={`${navComponent.scroll}`}
                 className="text-white text-sm font-normal md:py-6   md:px-5 font-nidus hover:text-blue-800"
               >
                 {navComponent.title}

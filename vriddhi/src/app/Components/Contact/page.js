@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ const page = () => {
         className="flex flex-col md:flex-row justify-center  items-center gap-11
     md:gap-32"
       >
-        <a href="https://www.google.com/maps/place/National+Institute+of+Technology,+Rourkela/@22.253051,84.8983625,17z/data=!3m1!4b1!4m6!3m5!1s0x3a201f72bbd561c3:0xab5c70e76a7b5a!8m2!3d22.253051!4d84.9009428!16zL20vMGNnM2xr?entry=ttu"><div className="   ">
+        <div className="   ">
           <Image
             src={"/map.jpg"}
             alt="Picture of the author"
@@ -18,7 +19,7 @@ const page = () => {
             height={100}
             className="rounded-xl md:h-[20rem] h-auto w-[15rem] md:w-auto  "
           />
-        </div></a>
+        </div>
         <div className="flex flex-col gap-9 md:w-1/4 w-[15rem] ">
           {ContactData.map((item) => {
             return (
@@ -67,3 +68,4 @@ const ContactData = [
     mail: "tel:7381357996",
   },
 ];
+
