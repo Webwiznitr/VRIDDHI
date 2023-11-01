@@ -14,7 +14,7 @@ const TeamCard = ({data}) => {
               <div className='md:h-[50vh] '>
               <img className='md:h-[17vw] md:w-[17vw] w-[40vw] h-[40vw] rounded-[400px]' src={element.image}/>
               </div>
-               <div className='md:text-2xl md:mt-[-17vh] md:w-[30vw] md:ml-[-6vw] sm:text-lg text-white font-bold'>{element.name}</div>
+               <div className='md:text-2xl md:mt-[-17vh] md:w-[30vw] md:ml-[-6.2vw] sm:text-lg text-white font-bold'>{element.name}</div>
                <div className='md:text-xl sm:text-sm text-white'>{element.info}</div>
 
 

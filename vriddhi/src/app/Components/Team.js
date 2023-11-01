@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Image from 'next/image'
 import TeamCard from './TeamCard'
@@ -6,7 +7,7 @@ import TeamData from '../Data/TeamData'
 const Team = () => {
   return (
     <div id='ourteam'>
-        <div className=' w-[100%] h-[100%]  bg-[#111A21] text-center relative text-white'>
+        <div className=' w-[100%] h-[100%]  bg-[#111A21] text-center relative'>
         <Image className='mix-blend-multiply relative'
         src='/images/Team/bg-3.png'
         layout='fill'
@@ -33,10 +34,6 @@ const Team = () => {
 
         </div>
 
-        
-
-
-        
       
     </div>
   )
