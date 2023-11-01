@@ -6,18 +6,18 @@ const Footer = () => {
     <>
       <footer className=" bg-[#0D1318] w-full h-/[50rem] text-white  grid md:grid-cols-4 grid-cols-reverse  overflow-hidden ">
         <div className="flex flex-col md:order-1 order-5 justify-start gap-4 items-start md:ml-5 p-7 md:p-0 ">
-          <h1 className="text-xl mt-7 uppercase">About</h1>
-          <span>
+          <div className="text-xl md:text-left text-center w-full mt-7 uppercase">About</div>
+          <span className="md:text-left text-center w-full">
             Vriddhi 2023 intends to feature major Sports tournaments such as
             Football, Cricket, Badminton, and much more.
           </span>
-          <a href="tel:7381357996" className="font-bold ">
+          <a  href="tel:7381357996" className="font-bold  md:text-left text-center w-full">
             Uday Kumar:- 7381357996
           </a>
-          <a href="tel:9692899851" className="font-bold ">
+          <a href="tel:9692899851" className="font-bold md:text-left text-center w-full">
             Saheel Mohapatra:-9692899851
           </a>
-          <div className="flex items-start justify-start w-full gap-3">
+          <div className="flex items-start justify-center w-full gap-3">
             <Link href="https://www.linkedin.com/company/vriddhi-nitr/">
               <img className="h-5 w-5 opacity-40" src="/link.png" alt="" />
             </Link>
@@ -36,8 +36,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col md:order-2 order-4  items-start md:ml-9 gap-4 justify-start p-7 md:p-0">
-          <h1 className="text-xl mt-7 uppercase ">Quick Links</h1>
-          <div>
+          <div className="text-xl w-full md:text-left text-center mt-7 uppercase ">Quick Links</div>
+          <div className="text-center w-full md:text-left">
             <ul>
               {QuickLinks.map((item, index) => {
                 return (
