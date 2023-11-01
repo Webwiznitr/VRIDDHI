@@ -130,5 +130,21 @@
         "If the server wins a rally, the server scores a point and then serves again from the alternate service court."
       ]
     }
+  ],
+  "kabaddi": [
+    { "messageType": "header", "message": "General Rules" },
+    {
+      "messageType": "list",
+      "message": [
+        "The match starts with a coin toss between the two teams and the winner can decide whether to raid or defend first.",
+        "Each team is allowed two time-outs in a half.",
+        "Each team in a kabaddi match has 7 players. The teams can also have 5 substitute players on the bench.",
+        "The Weight Limit is 85 kg (mandatory) for boys, i.e., any boy recorded as weighing more than 85 kg shall not be allowed to participate in this event.",
+        "Each team shall consist of a minimum of 14 players and 7 Players shall take to the mat at a time and the remaining players are substitutes.",
+        "The duration of the match shall be two halves of 20 minutes.",
+        "Each team shall score one point for every opponent out or put out. The side, which scores a LONA, shall score two extra points. The out and revival rule will be applicable."
+      ]
+    }
   ]
+
 }
