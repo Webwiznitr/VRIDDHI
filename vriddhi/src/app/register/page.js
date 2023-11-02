@@ -45,7 +45,7 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
         formData1.append('upload_preset','vriddhi');
         //formData2.append('upload_preset','vriddhi');
         
-            const list=[]
+            //const list=[]
             const response1 = await fetch(
               'https://api.cloudinary.com/v1_1/dlt7pwi85/image/upload',
               {
@@ -54,7 +54,8 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
               }
             ).then(r=>r.json())
            
-            list.push(response1.secure_url)
+           // list.push(response1.secure_url)
+           
 
             /*const response2 = await fetch(
                 'https://api.cloudinary.com/v1_1/dlt7pwi85/image/upload',
@@ -76,11 +77,13 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
         elist:form.elist,
         Wnumber:form.Wnumber,
         participants:form.participants,
+        logo:response1.secure_url,
         coaches:form.coaches,
-        url:list,
+     
        // transactionid:form.transactionid
         
     })
+   console.log(data)
 
       try{
         await fetch('api/user',{
