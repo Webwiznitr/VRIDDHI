@@ -8,6 +8,7 @@ import khokho from "./assets/khokho.png";
 import tabletennis from "./assets/tabletennis.png";
 import volleyball from "./assets/volleyball.png";
 import badminton from "./assets/badminton.png";
+import kabbadi from "./assets/kabbadi.png"
 import centerimg from "./assets/centerimg.png";
 import trophy from "./assets/trophymobile.png";
 import leftmobile from "./assets/leftmobile.png";
@@ -102,7 +103,7 @@ export default function Footer() {
           </div>
           <Tournament
             className="kabaddi"
-            src={badminton}
+            src={kabbadi}
             tournamentName={"KABADDI"}
             rules={tournamentRules.kabaddi}
           />
