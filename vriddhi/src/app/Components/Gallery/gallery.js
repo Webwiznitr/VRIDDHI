@@ -1,15 +1,15 @@
 import Image from "next/image";
 import "../Gallery/gallery.css"
-import photo1 from "./Images/sports1.jpg";
-import photo2 from "./Images/sports2.jpg";
-import photo3 from "./Images/sports3.jpg";
-import photo4 from "./Images/sports4.jpg";
-import photo5 from "./Images/sports5.jpg";
-import photo6 from "./Images/sports6.jpg";
-import photo7 from "./Images/sports7.jpg";
-import photo8 from "./Images/sports8.jpg";
-import photo9 from "./Images/sports9.jpg";
-import photo10 from "./Images/sports10.jpg";
+import photo1 from "../../../../public/images/Gallery/sports1.jpg";
+import photo2 from "../../../../public/images/Gallery/sports2.jpg";
+import photo3 from "../../../../public/images/Gallery/sports3.jpg";
+import photo4 from "../../../../public/images/Gallery/sports4.jpg";
+import photo5 from "../../../../public/images/Gallery/sports5.jpg";
+import photo6 from "../../../../public/images/Gallery/sports6.jpg";
+import photo7 from "../../../../public/images/Gallery/sports7.jpg";
+import photo8 from "../../../../public/images/Gallery/sports8.jpg";
+import photo9 from "../../../../public/images/Gallery/sports9.jpg";
+import photo10 from "../../../../public/images/Gallery/sports10.jpg";
 
 export default function Gallery() {
     return (
