@@ -6,12 +6,12 @@ const userSchema = new Schema(
         name:{type:String ,required :true},
         ins:{type:String ,required :true},
         //contact:{type:Number ,required :true},
-        Wnumber:{type:Number ,required :true},
+        Wnumber:{type:String ,required :true},
         events:{type:Array,default:[],required:true},
         elist:{type:String,required:true},
         //elist:{type:Array,default:[],required:true},
-        participants:{type:Number,required:true},
-        coaches:{type:Number,required:true},
+        participants:{type:String,required:true},
+        coaches:{type:String,required:true},
         logo:{type:String,required:true}
        // url:{type:Array,default:[],required:true},
        /* transactionid:{type:String,required:true},*/
