@@ -12,8 +12,8 @@ const userSchema = new Schema(
         //elist:{type:Array,default:[],required:true},
         participants:{type:Number,required:true},
         coaches:{type:Number,required:true},
-        url:{type:String,required:true}
-       /* url:{type:Array,default:[],required:true},*/
+    
+        url:{type:Array,default:[],required:true}
        /* transactionid:{type:String,required:true},*/
         
 
