@@ -32,12 +32,6 @@ export default function Home() {
     const handle = async (e) => {
         
         e.preventDefault();
-      
-if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.ins || !form.Wnumber  || !form.participants || !form.coaches /* || !form.transactionid || form.url.length==0*/  ){
-         
-    setError("Fill All Fields Please")
-          return ;
-      }
         const formData1 = new FormData();
         //const formData2 = new FormData();
         formData1.append('file', file1);
@@ -65,6 +59,13 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
                 }
               ).then(r=>r.json())
              list.push(response2.secure_url)*/
+      
+if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.ins || !form.Wnumber  || !form.participants || !form.coaches || !response1.secure_url /* || !form.transactionid || form.url.length==0*/  ){
+         
+    setError("Fill All Fields Please")
+          return ;
+      }
+        
     
       setError("");
       setSubmitdisable(true);
@@ -83,6 +84,7 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
        // transactionid:form.transactionid
         
     })
+    console.log(data)
    
 
       try{
