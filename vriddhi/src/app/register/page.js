@@ -84,7 +84,7 @@ if ( !form.email || !form.name || form.events.length==0 || !form.elist || !form.
        // transactionid:form.transactionid
         
     })
-    console.log(data)
+  
    
 
       try{
