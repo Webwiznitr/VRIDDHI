@@ -55,7 +55,13 @@ export const metadata = {
     title: "Vriddhi 2023 | Sports Fest, NIT Rourkela",
     description:
       "Vriddhi 2023 | Vriddhi is the annual sports fest of NIT Rourkela, one of India's premier technical universities. It is a three-day extravaganza of sports, culture, and entertainment. The fest features a wide range of sporting events, including cricket, football, basketball, volleyball, badminton, table tennis, and more. Vriddhi is a celebration of the spirit of sportsmanship and the joy of competition. It is a festival of fun, frolic, and friendship. Vriddhi 2023 will be held from 10th to 12th November 2023. ",
-    image: "https://vriddhi.co/all_logo.png",
+    images: [
+      {
+        url: "https://vriddhi.co/og.png",
+        width: 800,
+        height: 600,
+      },
+    ],
     site_name: "Vriddhi 2023",
   },
   twitter: {
@@ -64,10 +70,7 @@ export const metadata = {
     description:
       "Vriddhi 2023 | Vriddhi is the annual sports fest of NIT Rourkela, one of India's premier technical universities. It is a three-day extravaganza of sports, culture, and entertainment. The fest features a wide range of sporting events, including cricket, football, basketball, volleyball, badminton, table tennis, and more. Vriddhi is a celebration of the spirit of sportsmanship and the joy of competition. It is a festival of fun, frolic, and friendship. Vriddhi 2023 will be held from 10th to 12th November 2023. ",
 
-    images: {
-      url: "https://scontent.cdninstagram.com/v/t51.2885-15/313200299_618437863408828_5576021069347345303_n.webp?stp=dst-jpg_e35&_nc_ht=scontent.cdninstagram.com&_nc_cat=104&_nc_ohc=3LSBoD6xeKYAX8Q3j3L&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfDOaDftBGG9Q4KZI5vxlFVWs3BY_a8wjwdtz7H1ux3Ymg&oe=65491E91&_nc_sid=10d13b",
-      alt: "Vriddhi 2023 | Sports Fest, NIT Rourkela",
-    },
+    images: ["https://vriddhi.co/og.png"],
   },
 };
 
